@@ -16382,3 +16382,154 @@ Processing by BoxController#index as HTML
 Completed 200 OK in 1151ms (Views: 832.7ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/box" for ::1 at 2021-04-28 21:26:23 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.4ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (757.0ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 3fe53a3330af82480911
+Version: webpack 4.46.0
+Time: 38996ms
+Built at: 28/04/2021 21:27:09
+                                                                       Asset      Size            Chunks                         Chunk Names
+                                      js/application-1e514fda1cb09a4c83f5.js  3.46 MiB       application  [emitted] [immutable]  application
+                                  js/application-1e514fda1cb09a4c83f5.js.map  3.67 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-4144452dc804e19e83f2.js  2.91 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-4144452dc804e19e83f2.js.map  3.08 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json  1.94 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png  7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png  7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png   5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png  7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png  5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png  6.46 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png  4.01 KiB                    [emitted]              
+Entrypoint application = js/application-1e514fda1cb09a4c83f5.js js/application-1e514fda1cb09a4c83f5.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-4144452dc804e19e83f2.js js/server_rendering-4144452dc804e19e83f2.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 885 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.1 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 421 hidden modules
+
+Completed 200 OK in 45871ms (Views: 44987.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-04-28 21:27:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (18.4ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.9ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (79.0ms)
+Started GET "/box/new" for ::1 at 2021-04-28 21:27:18 -0500
+Processing by BoxController#new as HTML
+  Rendering box/new.html.erb within layouts/application
+  Rendered box/new.html.erb within layouts/application (0.8ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/box_owners/new" for ::1 at 2021-04-28 21:27:20 -0500
+Processing by BoxOwnersController#new as HTML
+  Rendering box_owners/new.html.erb within layouts/application
+  Rendered box_owners/new.html.erb within layouts/application (0.9ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/box_owners" for ::1 at 2021-04-28 21:27:21 -0500
+Processing by BoxOwnersController#index as HTML
+  Rendering box_owners/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "box_owners"[0m
+  [1m[36mBoxOwner Load (0.2ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendered box_owners/index.html.erb within layouts/application (764.8ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 780ms (Views: 778.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/box" for ::1 at 2021-04-28 21:27:26 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.8ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (1.0ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (763.2ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1080ms (Views: 770.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/box_owners/new" for ::1 at 2021-04-28 21:27:29 -0500
+Processing by BoxOwnersController#new as HTML
+  Rendering box_owners/new.html.erb within layouts/application
+  Rendered box_owners/new.html.erb within layouts/application (1.2ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/box_owners" for ::1 at 2021-04-28 21:27:41 -0500
+Processing by BoxOwnersController#create as HTML
+  Parameters: {"first_name"=>"Cesar", "last_name"=>"Cordoba", "email"=>"cesartest@email.com", "box_owner"=>{"first_name"=>"Cesar", "last_name"=>"Cordoba", "email"=>"cesartest@email.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "box_owners" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Cesar"], ["last_name", "Cordoba"], ["email", "01020200789eb9dbd608a6c3f3932b2851f6f3497cb39b5d4b5b68104bba14068facafac6501b5e7a534dba84c15cc4d111a22de5d2c00000071306f06092a864886f70d010706a0623060020100305b06092a864886f70d010701301e060960864801650304012e3011040ca9d4ed8122a9033fbebfd9d5020110802edbe964bd46bc41642a79408030b41f6faf4cfe8026589e964ad34a25064b45c7a91909a0ebca7411e484eafc51b2"], ["created_at", "2021-04-29 02:27:41.910980"], ["updated_at", "2021-04-29 02:27:41.910980"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 1236ms (Views: 0.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/box_owners" for ::1 at 2021-04-28 21:27:42 -0500
+Processing by BoxOwnersController#index as HTML
+  Rendering box_owners/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "box_owners"[0m
+  [1m[36mBoxOwner Load (0.2ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendered box_owners/index.html.erb within layouts/application (450.6ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 464ms (Views: 461.7ms | ActiveRecord: 0.4ms)
+
+

@@ -1,0 +1,9 @@
+tmp
+tmp/cache
+tmp/pids
+tmp/restart.txt
+tmp/sockets
+public
+log
+log/*
+node_modules
