@@ -1,0 +1,1 @@
+{"ast":null,"code":"import byConstructor from './byConstructor.js';\nexport default byConstructor;\nexport function then(resolve) {\n  resolve(byConstructor);\n}","map":null,"metadata":{},"sourceType":"module"}

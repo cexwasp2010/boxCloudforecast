@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Box Factory</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- TODO: Should move the inline CSS to a css file -->
+    <style type="text/css">
+    .nav {
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    </style>
+  </head>
+
+  <body>
+    <nav class="teal" role="navigation">
+      <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">CloudForecast BoxFactory</a>
+      <ul class="right hide-on-med-and-down">
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Boxes", box_index_path %></li>
+          <li><%= link_to "New Box", new_box_path %></li>
+          <li><%= link_to "BoxOwners", box_owners_path %></li>
+          <li><%= link_to "New BoxOwner", new_box_owner_path %></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>

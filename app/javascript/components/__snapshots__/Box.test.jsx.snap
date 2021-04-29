@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box should render the Box Component correctly 1`] = `
+<Fragment>
+  <div>
+    <h4
+      className="label"
+    >
+      Label: 
+      Test Label
+    </h4>
+  </div>
+  <div>
+    <h4>
+      Size: 
+      medium
+    </h4>
+  </div>
+  <img
+    src="box-medium.png"
+  />
+</Fragment>
+`;

@@ -1,0 +1,1 @@
+{"ast":null,"code":"'use strict';\n\nexports.parse = require('htmlparser2').parseDocument;\nexports.render = require('dom-serializer')[\"default\"];","map":null,"metadata":{},"sourceType":"module"}
