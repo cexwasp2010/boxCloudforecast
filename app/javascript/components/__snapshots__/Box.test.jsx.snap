@@ -2,22 +2,70 @@
 
 exports[`Box should render the Box Component correctly 1`] = `
 <Fragment>
-  <div>
-    <h4
-      className="label"
+  <div
+    className="card show_item"
+  >
+    <div
+      className="card-image"
     >
-      Label: 
-      Test Label
-    </h4>
+      <img
+        src="box-medium.png"
+      />
+    </div>
+    <div
+      className="card-content"
+    >
+      <h6>
+        <span
+          className="brown-text"
+        >
+          Label: 
+        </span>
+        Test Label
+      </h6>
+      <h6>
+        <span
+          className="brown-text"
+        >
+          Size: 
+        </span>
+        medium
+      </h6>
+      <h6>
+        Attach Box Owner:
+      </h6>
+      <div
+        className="input-field"
+      >
+        <select
+          onChange={[Function]}
+        >
+          <option
+            value="no_selection"
+          />
+          <option
+            key="1"
+            value={1}
+          >
+            email1@test.com
+          </option>
+          <option
+            key="2"
+            value={2}
+          >
+            email2@test.com
+          </option>
+        </select>
+        <div>
+          <button
+            className="btn-small waves-effect waves-light brown lighten-1"
+            onClick={[Function]}
+          >
+            Atthach box owner
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
-  <div>
-    <h4>
-      Size: 
-      medium
-    </h4>
-  </div>
-  <img
-    src="box-medium.png"
-  />
 </Fragment>
 `;

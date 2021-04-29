@@ -57,8 +57,8 @@ function Box(props) {
           <img src={boxImage(size)} />
         </div>
         <div className='card-content'>
-          <h6> <span className='brown-text'>Label: </span>{label}</h6>
-          <h6> <span className='brown-text'>Size: </span>{size}</h6>
+          <h6><span className='brown-text'>Label: </span>{label}</h6>
+          <h6><span className='brown-text'>Size: </span>{size}</h6>
           <h6>
             Attach Box Owner:
           </h6>
