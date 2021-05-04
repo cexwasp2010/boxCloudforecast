@@ -16,3 +16,55 @@ select {
 .error{
 	color: red;
 }
+
+.auxiliar_section {
+	background: #F3F6FA;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 160px;
+  position: static;
+  left: 0px;
+	background: #F3F6FA;
+}
+
+@media (min-width: 768px){
+	.navbar-expand-md .navbar-collapse {
+		margin-left: 313px;
+	}
+}
+
+.nav-container{
+  float: left;
+	position: static;
+	align-items: center;
+	width: 285px;
+}
+
+.text-nav{
+  width: 312px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  align-items: center;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #3C64B1;
+}
+
+a {
+	color: #373F41;
+	font-family: Mulish;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.active .nav-link {
+  color: #3C64B1;
+}

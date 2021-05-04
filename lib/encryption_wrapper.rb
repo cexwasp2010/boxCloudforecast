@@ -18,9 +18,17 @@ module EncryptionWrapper
 	    def encrypt(text)
       
       # OPTIMIZE change this keyId because I didn't find the required credentials in the README.md
-      keyId = 'arn:aws:kms:us-west-2:941397045302:key/b6ab36fb-9514-46bb-9afe-ce315c92e7f8'
+      # keyId = 'arn:aws:kms:us-west-2:941397045302:key/b6ab36fb-9514-46bb-9afe-ce315c92e7f8'
+      
+      keyId = '0ad31902-4157-49c0-abd6-ca6fb7f35e81'
 
-      client = Aws::KMS::Client.new(region: 'us-west-2')
+      client = Aws::KMS::Client.new(
+        region: 'us-east-1',
+        access_key_id: 'AKIAUB5TTRWAR54B2SRB',
+        secret_access_key: "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"
+      )
+
+      # client = Aws::KMS::Client.new(region: 'us-west-2')
 
       resp = client.encrypt({
         key_id: keyId,

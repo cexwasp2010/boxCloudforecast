@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>The Box Factory</title>
+    
     <%= csrf_meta_tags %>
 
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -15,21 +19,11 @@
     }
     </style>
   </head>
-
+  <header>
+    <%= render 'layouts/navigation' %>
+  </header>
   <body>
-    <nav class="teal" role="navigation">
-      <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">CloudForecast BoxFactory</a>
-      <ul class="right hide-on-med-and-down">
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Boxes", box_index_path %></li>
-          <li><%= link_to "New Box", new_box_path %></li>
-          <li><%= link_to "BoxOwners", box_owners_path %></li>
-          <li><%= link_to "New BoxOwner", new_box_owner_path %></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container">
+    <div>
       <%= yield %>
     </div>
   </body>

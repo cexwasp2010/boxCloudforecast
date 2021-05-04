@@ -16,7 +16,16 @@
 // const imagePath = (name) => images(name, true)
 
 // Support component names relative to this directory:
+import "bootstrap"
+import "../stylesheets/application"
+
+require("jquery")
 
 var componentRequireContext = require.context("components", true);
 var ReactRailsUJS = require("react_ujs");
 ReactRailsUJS.useContext(componentRequireContext);
+
+$(".nav-item").on("click", function(){
+   $(".nav-link").find(".active").removeClass("active");
+   $(this).addClass("active");
+});

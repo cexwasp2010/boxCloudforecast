@@ -1,0 +1,27 @@
+<nav class="navbar navbar navbar-static-top navbar-expand-md">
+  <div class="container">
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only"><%= image_pack_tag "media/components/images/box_logo.png" %>THE BOX FACTORY</span>
+    </button> 
+    <div class="text-nav"><%= image_pack_tag "media/components/images/box_logo.png" %> <span>THE BOX FACTORY</span></div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <%= link_to "Home", root_path, class: "nav-link"%>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Boxes", box_index_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "New Box", new_box_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "BoxOwners", box_owners_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "New BoxOwner", new_box_owner_path, class: "nav-link" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
