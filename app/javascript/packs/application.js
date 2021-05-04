@@ -16,8 +16,6 @@
 // const imagePath = (name) => images(name, true)
 
 // Support component names relative to this directory:
-import "materialize-css/dist/css/materialize.min.css";
-import "materialize-css/dist/js/materialize.min.js";
 
 var componentRequireContext = require.context("components", true);
 var ReactRailsUJS = require("react_ujs");
