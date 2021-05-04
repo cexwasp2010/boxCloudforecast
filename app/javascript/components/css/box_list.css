@@ -1,0 +1,25 @@
+.container {
+	padding: 64px 160px
+}
+h1 {
+	position: static;
+	width: 75px;
+	height: 32px;
+	left: 0px;
+	top: 0px;
+
+	font-family: Mulish;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 32px;
+	letter-spacing: 0.2px;
+
+	color: #373F41;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 16px 0px;
+
+}

@@ -22943,3 +22943,1682 @@ puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
   Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.4ms)
   Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.6ms)
+Started GET "/" for ::1 at 2021-05-04 14:56:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (8.5ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (25.1ms)
+Completed 200 OK in 70ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 14:56:30 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (12.5ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.4ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.9ms)
+Started GET "/" for ::1 at 2021-05-04 14:57:28 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (27.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 14:57:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (11.6ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.6ms)
+Started GET "/" for ::1 at 2021-05-04 14:58:30 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (21.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 14:58:41 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (10.9ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.0ms)
+Started GET "/" for ::1 at 2021-05-04 15:01:37 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (22.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:01:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (14.2ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.7ms)
+Started GET "/" for ::1 at 2021-05-04 15:02:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (6.8ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (23.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 61ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:02:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (12.2ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.3ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.9ms)
+Started GET "/" for ::1 at 2021-05-04 15:03:14 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (35.4ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 72ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:03:15 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (17.8ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (64.5ms)
+Started GET "/" for ::1 at 2021-05-04 15:06:36 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: a677286d24618958b725
+Version: webpack 4.46.0
+Time: 14308ms
+Built at: 04/05/2021 15:06:57
+                                                                       Asset      Size            Chunks                         Chunk Names
+                                      js/application-f089045eb2af7b0bfb51.js  4.12 MiB       application  [emitted] [immutable]  application
+                                  js/application-f089045eb2af7b0bfb51.js.map  4.39 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-baed257fadcd69675f4b.js  3.23 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-baed257fadcd69675f4b.js.map  3.45 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json  2.17 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png  7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png  7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png   5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png  7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png  5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png  6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png  1.47 KiB                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico  6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png  4.01 KiB                    [emitted]              
+Entrypoint application = js/application-f089045eb2af7b0bfb51.js js/application-f089045eb2af7b0bfb51.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-baed257fadcd69675f4b.js js/server_rendering-baed257fadcd69675f4b.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 426 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (22.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 20618ms (Views: 20615.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:06:58 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (15.8ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.4ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.7ms)
+Started GET "/" for ::1 at 2021-05-04 15:10:39 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 9dc0b0a729907f8ef957
+Version: webpack 4.46.0
+Time: 12358ms
+Built at: 04/05/2021 15:10:56
+                                                                       Asset      Size            Chunks                         Chunk Names
+                                      js/application-7941db8584e84fb322d4.js  4.12 MiB       application  [emitted] [immutable]  application
+                                  js/application-7941db8584e84fb322d4.js.map  4.39 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-60330701aee4577b74cd.js  3.23 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-60330701aee4577b74cd.js.map  3.45 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json  2.17 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png  7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png  7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png   5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png  7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png  5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png  6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png  1.47 KiB                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico  6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png  4.01 KiB                    [emitted]              
+Entrypoint application = js/application-7941db8584e84fb322d4.js js/application-7941db8584e84fb322d4.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-60330701aee4577b74cd.js js/server_rendering-60330701aee4577b74cd.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 426 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (31.0ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 17539ms (Views: 17537.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:10:57 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (11.3ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.2ms)
+Started GET "/" for ::1 at 2021-05-04 15:13:04 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 1739701a4bfbf8cc3a03
+Version: webpack 4.46.0
+Time: 14022ms
+Built at: 04/05/2021 15:13:23
+                                                                       Asset      Size            Chunks                         Chunk Names
+                                      js/application-5d23025cfdc216291b35.js  4.12 MiB       application  [emitted] [immutable]  application
+                                  js/application-5d23025cfdc216291b35.js.map  4.39 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-772a4cff7339271eb93a.js  3.23 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-772a4cff7339271eb93a.js.map  3.45 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json  2.17 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png  7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png  7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png   5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png  7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png  5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png  6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png  1.47 KiB                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico  6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png  4.01 KiB                    [emitted]              
+Entrypoint application = js/application-5d23025cfdc216291b35.js js/application-5d23025cfdc216291b35.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-772a4cff7339271eb93a.js js/server_rendering-772a4cff7339271eb93a.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 426 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (31.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 19079ms (Views: 19076.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:13:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (14.8ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.2ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (64.3ms)
+Started GET "/" for ::1 at 2021-05-04 15:13:53 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (47.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:13:54 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (10.0ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.7ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (56.6ms)
+Started GET "/" for ::1 at 2021-05-04 15:14:57 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 151345de4555d5e6d82a
+Version: webpack 4.46.0
+Time: 13862ms
+Built at: 04/05/2021 15:15:15
+                                                                       Asset      Size            Chunks                         Chunk Names
+                                      js/application-b04ec76bf7599196a86b.js  4.12 MiB       application  [emitted] [immutable]  application
+                                  js/application-b04ec76bf7599196a86b.js.map  4.39 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-42401d2aae557573cbf4.js  3.23 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-42401d2aae557573cbf4.js.map  3.45 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json  2.17 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png  7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png  7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png   5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png  7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png  5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png  6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png  1.47 KiB                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico  6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png  4.01 KiB                    [emitted]              
+Entrypoint application = js/application-b04ec76bf7599196a86b.js js/application-b04ec76bf7599196a86b.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-42401d2aae557573cbf4.js js/server_rendering-42401d2aae557573cbf4.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 426 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (20.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 18634ms (Views: 18632.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:15:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (15.0ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.2ms)
+Started GET "/" for ::1 at 2021-05-04 15:18:27 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 8a97091d69e01a64b8b9
+Version: webpack 4.46.0
+Time: 11690ms
+Built at: 04/05/2021 15:18:43
+                                                                       Asset      Size            Chunks                         Chunk Names
+                                      js/application-4d3c83c68019d1d13043.js  4.12 MiB       application  [emitted] [immutable]  application
+                                  js/application-4d3c83c68019d1d13043.js.map  4.39 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-99b9379404537fb01573.js  3.24 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-99b9379404537fb01573.js.map  3.45 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json  2.17 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png  7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png  7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png   5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png  7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png  5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png  6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png  1.47 KiB                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico  6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png  4.01 KiB                    [emitted]              
+Entrypoint application = js/application-4d3c83c68019d1d13043.js js/application-4d3c83c68019d1d13043.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-99b9379404537fb01573.js js/server_rendering-99b9379404537fb01573.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 426 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (23.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 16468ms (Views: 16466.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:18:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (13.7ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.3ms)
+Started GET "/" for ::1 at 2021-05-04 15:22:37 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 84d331ca0d8eccc9bd31
+Version: webpack 4.46.0
+Time: 15124ms
+Built at: 04/05/2021 15:22:57
+                                                                       Asset      Size            Chunks                         Chunk Names
+                                      js/application-379300728a4ca2836359.js  4.12 MiB       application  [emitted] [immutable]  application
+                                  js/application-379300728a4ca2836359.js.map  4.39 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-077e02b12ce7e8b3b6fb.js  3.23 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-077e02b12ce7e8b3b6fb.js.map  3.45 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json  2.17 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png  7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png  7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png   5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png  7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png  5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png  6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png  1.47 KiB                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico  6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png  4.01 KiB                    [emitted]              
+Entrypoint application = js/application-379300728a4ca2836359.js js/application-379300728a4ca2836359.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-077e02b12ce7e8b3b6fb.js js/server_rendering-077e02b12ce7e8b3b6fb.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 426 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (22.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 20203ms (Views: 20201.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:22:59 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (14.0ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.9ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.2ms)
+Started GET "/" for ::1 at 2021-05-04 15:28:32 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 0c4adcd75c7ebe7aadbf
+Version: webpack 4.46.0
+Time: 13493ms
+Built at: 04/05/2021 15:28:50
+                                                                       Asset      Size            Chunks                         Chunk Names
+                                      js/application-f233ace8a8e80f396c6c.js  4.12 MiB       application  [emitted] [immutable]  application
+                                  js/application-f233ace8a8e80f396c6c.js.map  4.39 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-47c4633bead6cd6c13ad.js  3.23 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-47c4633bead6cd6c13ad.js.map  3.45 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json  2.17 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png  7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png  7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png   5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png  7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png  5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png  6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png  1.47 KiB                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico  6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png  4.01 KiB                    [emitted]              
+Entrypoint application = js/application-f233ace8a8e80f396c6c.js js/application-f233ace8a8e80f396c6c.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-47c4633bead6cd6c13ad.js js/server_rendering-47c4633bead6cd6c13ad.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 426 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (32.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 18649ms (Views: 18645.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:28:52 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.4ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (9.5ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (67.6ms)
+Started GET "/" for ::1 at 2021-05-04 15:32:47 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: c9943714f2b2b58a3eb1
+Version: webpack 4.46.0
+Time: 17670ms
+Built at: 04/05/2021 15:33:09
+                                                                       Asset      Size            Chunks                         Chunk Names
+                                      js/application-e916e94febb2090649ed.js  4.12 MiB       application  [emitted] [immutable]  application
+                                  js/application-e916e94febb2090649ed.js.map  4.39 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-8a7b86a3157df88822ca.js  3.23 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-8a7b86a3157df88822ca.js.map  3.45 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json  2.17 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png  7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png  7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png   5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png  7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png  5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png  6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png  1.47 KiB                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico  6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png  4.01 KiB                    [emitted]              
+Entrypoint application = js/application-e916e94febb2090649ed.js js/application-e916e94febb2090649ed.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-8a7b86a3157df88822ca.js js/server_rendering-8a7b86a3157df88822ca.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 426 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (33.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 22971ms (Views: 22968.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:33:11 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (13.0ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.0ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.4ms)
+Started GET "/" for ::1 at 2021-05-04 15:33:34 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 12a730b5094360ae7284
+Version: webpack 4.46.0
+Time: 16281ms
+Built at: 04/05/2021 15:33:56
+                                                                       Asset      Size            Chunks                         Chunk Names
+                                      js/application-42591c309aa8506e333a.js  4.12 MiB       application  [emitted] [immutable]  application
+                                  js/application-42591c309aa8506e333a.js.map  4.39 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-4f42336d78c6617ee719.js  3.23 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-4f42336d78c6617ee719.js.map  3.45 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json  2.17 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png  7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png  7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png   5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png  7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png  5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png  6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png  1.47 KiB                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico  6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png  4.01 KiB                    [emitted]              
+Entrypoint application = js/application-42591c309aa8506e333a.js js/application-42591c309aa8506e333a.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-4f42336d78c6617ee719.js js/server_rendering-4f42336d78c6617ee719.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 426 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (26.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 21656ms (Views: 21653.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:33:57 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (13.2ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.2ms)
+Started GET "/" for ::1 at 2021-05-04 15:35:47 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 531939644411d6d9c610
+Version: webpack 4.46.0
+Time: 18577ms
+Built at: 04/05/2021 15:36:11
+                                                                       Asset      Size            Chunks                         Chunk Names
+                                      js/application-bf6c6cdf22664a7c8d34.js  4.12 MiB       application  [emitted] [immutable]  application
+                                  js/application-bf6c6cdf22664a7c8d34.js.map  4.39 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-c3186e3410202d7a4436.js  3.24 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-c3186e3410202d7a4436.js.map  3.45 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json  2.17 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png  7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png  7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png   5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png  7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png  5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png  6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png  1.47 KiB                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico  6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png  4.01 KiB                    [emitted]              
+Entrypoint application = js/application-bf6c6cdf22664a7c8d34.js js/application-bf6c6cdf22664a7c8d34.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-c3186e3410202d7a4436.js js/server_rendering-c3186e3410202d7a4436.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 426 hidden modules
+
+ERROR in ./app/javascript/components/BoxHome.jsx
+Module not found: Error: Can't resolve 'react-router' in '/home/cesar/Documentos/test/boxCloudforecast/app/javascript/components'
+ @ ./app/javascript/components/BoxHome.jsx 16:0-36 123:38-42
+ @ ./app/javascript/components sync ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+
+warning package.json: No license field
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (29.4ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 23902ms (Views: 23899.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:36:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (16.7ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.1ms)
+Started GET "/" for ::1 at 2021-05-04 15:37:01 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 474dd13350988cf38c30
+Version: webpack 4.46.0
+Time: 17741ms
+Built at: 04/05/2021 15:37:24
+                                                                       Asset      Size            Chunks                         Chunk Names
+                                      js/application-1d2ecefc9909af47d305.js  4.12 MiB       application  [emitted] [immutable]  application
+                                  js/application-1d2ecefc9909af47d305.js.map  4.39 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-c02aa730456b33a3e4c3.js  3.24 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-c02aa730456b33a3e4c3.js.map  3.45 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json  2.17 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png  7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png  7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png   5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png  7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png  5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png  6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png  1.47 KiB                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico  6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png  4.01 KiB                    [emitted]              
+Entrypoint application = js/application-1d2ecefc9909af47d305.js js/application-1d2ecefc9909af47d305.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-c02aa730456b33a3e4c3.js js/server_rendering-c02aa730456b33a3e4c3.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 426 hidden modules
+
+ERROR in ./app/javascript/components/BoxHome.jsx
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/cesar/Documentos/test/boxCloudforecast/app/javascript/components'
+ @ ./app/javascript/components/BoxHome.jsx 16:0-40 123:38-42
+ @ ./app/javascript/components sync ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+
+warning package.json: No license field
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (27.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 23735ms (Views: 23732.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:37:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (11.5ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (59.1ms)
+Started GET "/" for ::1 at 2021-05-04 15:38:30 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: c27920ca2299d71527a4
+Version: webpack 4.46.0
+Time: 17950ms
+Built at: 04/05/2021 15:38:53
+                                                                       Asset      Size            Chunks                         Chunk Names
+                                      js/application-61a18278d83eb335645d.js  4.12 MiB       application  [emitted] [immutable]  application
+                                  js/application-61a18278d83eb335645d.js.map  4.39 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-6742074e7c976cba4779.js  3.23 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-6742074e7c976cba4779.js.map  3.45 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json  2.17 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png  7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png  7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png   5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png  7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png  5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png  6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png  1.47 KiB                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico  6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png  4.01 KiB                    [emitted]              
+Entrypoint application = js/application-61a18278d83eb335645d.js js/application-61a18278d83eb335645d.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-6742074e7c976cba4779.js js/server_rendering-6742074e7c976cba4779.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 426 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (27.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 22784ms (Views: 22781.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:38:54 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (17.7ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.0ms)
+Started GET "/box" for ::1 at 2021-05-04 15:39:04 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (1.4ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.6ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (1075.8ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (26.3ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 2480ms (Views: 1112.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/box" for ::1 at 2021-05-04 15:40:13 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.3ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (1035.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (28.8ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 2441ms (Views: 1078.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:40:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (7.1ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.7ms)
+Started GET "/box" for ::1 at 2021-05-04 15:43:08 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.4ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (1028.2ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 0c8f7558711a13a955f5
+Version: webpack 4.46.0
+Time: 14181ms
+Built at: 04/05/2021 15:43:30
+                                                                       Asset      Size            Chunks                         Chunk Names
+                                      js/application-77e1ac1a2d745ee04e77.js  4.12 MiB       application  [emitted] [immutable]  application
+                                  js/application-77e1ac1a2d745ee04e77.js.map  4.39 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-1f97ab06de22b2f049a0.js  3.24 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-1f97ab06de22b2f049a0.js.map  3.45 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json  2.17 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png  7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png  7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png   5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png  7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png  5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png  6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png  1.47 KiB                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico  6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png  4.01 KiB                    [emitted]              
+Entrypoint application = js/application-77e1ac1a2d745ee04e77.js js/application-77e1ac1a2d745ee04e77.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-1f97ab06de22b2f049a0.js js/server_rendering-1f97ab06de22b2f049a0.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1.04 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 428 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (32.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 21794ms (Views: 20533.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-04 15:43:31 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (13.8ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (56.9ms)

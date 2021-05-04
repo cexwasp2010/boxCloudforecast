@@ -58,9 +58,9 @@ function BoxHome(props) {
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 				</div>
 				<div className="container_btn">
-					<button  type="button" className="btn btn-primary btn-lg">
+					<a href="/box" type="button" className="btn btn-primary btn-lg">
 						My boxes
-					</button>
+					</a>
 				</div>
 			</div>
 	    <div className="container">

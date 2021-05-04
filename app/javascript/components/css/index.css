@@ -68,3 +68,43 @@ a {
 .active .nav-link {
   color: #3C64B1;
 }
+
+h5.text-uppercase {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.4px;
+  margin: 40px 0px;
+}
+
+.footer_txt_color {
+  color: #3C64B1;
+}
+
+footer p {
+  width: 445px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: #737B7D;
+  margin: 40px 0px;
+}
+
+footer a {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: #3C64B1;
+}
+
+footer li {
+  margin: 40px 0px;
+}
