@@ -1,25 +1,50 @@
-.container {
+.box_list {
+	width: 50%;
+}
+
+.principal_container {
 	padding: 64px 160px
 }
-h1 {
-	position: static;
-	width: 75px;
-	height: 32px;
-	left: 0px;
-	top: 0px;
 
+h1 {
 	font-family: Mulish;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 26px;
 	line-height: 32px;
 	letter-spacing: 0.2px;
-
 	color: #373F41;
+}
 
-	flex: none;
-	order: 0;
-	flex-grow: 0;
+label {
+	position: static;
+	font-family: Mulish;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	color: #737B7D;
 	margin: 16px 0px;
+}
 
+table.table {
+	margin-top: 16px;
+}
+
+.table th, .table tr, .table td {
+	border: none;
+}
+
+table td {
+	font-family: Mulish;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: #737B7D;
+}
+
+a.float-right.btn.btn-primary.btn-lg {
+  margin-top: 20px;
 }

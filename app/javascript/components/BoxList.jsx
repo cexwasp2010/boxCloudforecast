@@ -1,13 +1,30 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
-import Box from "./Box"
 import './css/index.css'
+import './css/box_list.css'
+
+import SmallBox from './images/box-small.png'
+import MediumBox from './images/box-medium.png'
+import LargeBox from './images/box-large.png'
+import Delete from './images/delete.png'
 
 import axios from 'axios';
 
 function BoxList(props) {
-
+  
   const [error, setError] = useState('')
+
+  const boxImage = (size) => {
+    
+    switch (size) {
+      case 'small':
+        return SmallBox
+      case 'medium':
+        return MediumBox
+      case 'large':
+        return LargeBox
+    }
+  }
 
   const deleteBox = (id) => {
     console.log('delete box: ' + id)
@@ -25,31 +42,61 @@ function BoxList(props) {
 
   return (
     <React.Fragment>
-      <label>
-        Total Boxes: {props.total}
-      </label>
       <div className="row">
+        <div className="col-6">
+          <h1>Boxes</h1>
 
-        {error !== '' && (
-          <div key='error' className='error'>{error}</div>
-        )}
+          <label>
+            Total Boxes: {props.total}
+          </label>
+          {error !== '' && (
+            <div key='error' className='error'>{error}</div>
+          )}
+          <table className="table">
+            <thead>
+              <tr>
+                <th scope="col">Preview</th>
+                <th scope="col">Label</th>
+                <th scope="col">Size</th>
+                <th scope="col">ID</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              {props.boxes && (
+                props.boxes.map((box) => (
+                  <tr key={`id-${box.id}`}>
+                    <td>
+                      <img src={boxImage(box.size)} width="32px" height="32px" />
+                    </td>
 
-        {props.boxes && (
-          props.boxes.map((box) => (
-            <div key={`info-${box.id}`} className='col s12 m4'>
-              <Box key={box.id} size={box.size} label={box.label} box_owner={box.box_owners_id} box_owners={props.box_owners} box_id={box.id} />
+                    <td>
+                      {box.label}
+                    </td>
 
-              <div key={`id-${box.id}`}>
-                ID: {box.id}
-              </div>
+                    <td>
+                      {box.size}
+                    </td>
+                    
+                    <td>
+                      {box.id}
+                    </td>
 
-              <div className='center'>
-                <button className='btn-large waves-effect waves-light teal lighten-1' key={`delete-${box.id}`} onClick={() => deleteBox(box.id)}>Delete</button>
-              </div>
-            </div>
-          ))
-        )}
+                    <th scope="row">
+                      <img src={Delete} alt="Delete image" />
+                    </th>
+                  </tr>
+                ))
+              )}
+            </tbody>
+          </table>
         </div>
+        <div className="col-6">
+          <a href="/box" type="button" className="float-right btn btn-primary btn-md">
+            New Box
+          </a>
+        </div>
+      </div>
     </React.Fragment>
   );
 }
