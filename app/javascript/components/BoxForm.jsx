@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import './css/box_list.css'
 
 /* Component to validate fields in form  */
 import { Formik } from "formik";
@@ -19,6 +20,7 @@ import axios from 'axios';
 import './css/index.css'
 
 function BoxForm(props) {
+  const [disableButton, setDisableButton] = useState('disable_btn');
   const [size, setSize] = useState(props.size);
   const [label, setLabel] = useState('');
   const [error, setError] = useState('')
@@ -69,53 +71,74 @@ function BoxForm(props) {
 
   const handleSizeChange = (event) => {
     setSize(event.target.value);
+    if (!label){
+      setDisableButton('disable_btn');
+    }else{
+      setDisableButton('');
+    }
+  }
+
+  const handleLabel = (e) => {
+    setLabel(e.target.value);
+    if (size == "no_selection"){
+      setDisableButton('disable_btn');
+    }else{
+      setDisableButton('');
+    }
   }
 
   return (
     <React.Fragment>
-      <h3>Design Your Box</h3>
+      <div className="row">
+        <div className="col-6">
+           <h1>New Box</h1>
 
-      <div className='boxForm'>
-        <div>
-          <div>
-            Step 1: Choose a size:
+          <div className='boxForm'>
+            <div>
+              <div className="label_forms">
+                Size:
+              </div>
+              <div>
+                <select value={size} onChange={handleSizeChange}>
+                  <option value="no_selection">Select box size</option> 
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                </select>
+                {errorSize !== '' && (
+                  <div key='errorSize' className='error'>{errorSize}</div>
+                )}
+              </div>
+            </div>
+            <div>
+              <div className="label_forms">
+                 Label
+              </div>
+              <div>
+                <input type="text" placeholder="Label" onChange={handleLabel} />
+                {errorLabel !== '' && (
+                  <div key='errorLabel' className='error'>{errorLabel}</div>
+                )}
+              </div>
+            </div>
+            <div>
+              <button className={`btn btn-outline-primary btn-lg lft-btn ${disableButton}`} onClick={saveBox}>Save</button>
+              <button className='btn btn-outline-primary btn-lg' onClick={saveBox}>Cancel</button>
+
+              {error !== '' && (
+                <div key='error' className='error'>{error}</div>
+              )}
+            </div>
           </div>
-          <div>
-            <select value={size} onChange={handleSizeChange}>
-              <option value="no_selection"></option>
-              <option value="small">Small</option>
-              <option value="medium">Medium</option>
-              <option value="large">Large</option>
-            </select>
-            {errorSize !== '' && (
-              <div key='errorSize' className='error'>{errorSize}</div>
+        </div>
+        <div className="col-6">
+          <div className='boxPreview'>
+            <img src={boxImage(size)}/>
+
+            {label !== '' && (
+              <h4>Preview: {label}</h4>
             )}
           </div>
-        </div>
-        <div>
-          <div>
-            Step 2: Label this box:
-          </div>
-          <div>
-            <input type="text" placeholder="Label" onChange={e => setLabel(e.target.value)} />
-            {errorLabel !== '' && (
-              <div key='errorLabel' className='error'>{errorLabel}</div>
-            )}
-          </div>
-        </div>
-        <div className='boxPreview'>
-          <img src={boxImage(size)}/>
-
-          {label !== '' && (
-            <h4>Preview: {label}</h4>
-          )}
-        </div>
-        <div>
-          <button className='btn-large waves-effect waves-light teal lighten-1' onClick={saveBox}>Save as new box</button>
-
-          {error !== '' && (
-            <div key='error' className='error'>{error}</div>
-          )}
         </div>
       </div>
     </React.Fragment>

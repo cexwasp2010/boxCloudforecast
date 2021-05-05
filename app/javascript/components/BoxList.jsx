@@ -92,7 +92,7 @@ function BoxList(props) {
           </table>
         </div>
         <div className="col-6">
-          <a href="/box" type="button" className="float-right btn btn-primary btn-md">
+          <a href="/box/new" type="button" className="float-right btn btn-primary btn-md">
             New Box
           </a>
         </div>
