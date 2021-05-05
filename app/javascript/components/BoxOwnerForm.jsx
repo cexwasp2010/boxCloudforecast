@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import './css/box_list.css'
 
 /* Component to validate fields in form  */
 import { Formik } from "formik";
@@ -10,12 +11,14 @@ import axios from 'axios';
 import './css/index.css'
 
 function BoxOwnerForm(props) {
+  const [disableButton, setDisableButton] = useState('disable_btn');
   const [first_name, setFirstName] = useState('');
   const [last_name, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [errorEmail, setErrorEmail] = useState('')
   const [errorFirstName, setErrorFirstName] = useState('')
   const [errorLastName, setErrorLastName] = useState('')
+  const [error, setError] = useState('')
 
   const saveBoxOwner = () => {
     
@@ -56,12 +59,25 @@ function BoxOwnerForm(props) {
     }
   }
   
-  const handleFirstNameChange = (event) => {
-    setFirstName(event.target.value);
+  /*To disable button save if any field is empty*/
+  function checkFields(){
+    if (!first_name || !last_name || !email){
+      setDisableButton('disable_btn');
+    }else{
+      setDisableButton('');
+    }
   }
   
+  const handleFirstNameChange = (event) => {
+    setFirstName(event.target.value);
+    /*Call function that check empty fields*/  
+    checkFields();
+  }
+
   const handleLastNameChange = (event) => {
     setLastName(event.target.value);
+    /*Call function that check empty fields*/  
+    checkFields();
   }
 
   const handleEmailChange = (event) => {
@@ -70,62 +86,81 @@ function BoxOwnerForm(props) {
       setErrorEmail("The Email format isn't correct!");
     } else {
       setErrorEmail("");
+      /*Call function that check empty fields*/  
+      checkFields();
     } 
+  }
+
+  /*Function that set empty form fields*/  
+  const clearBoxOwner = (event) => {
+    setDisableButton('disable_btn');
+    setFirstName("");
+    setLastName("");
+    setEmail("");
   }
 
   return (
     <React.Fragment>
-      <h3>Set Your Box Owner</h3>
+      <div className="row">
+        <div className="col-6">
+          <h1>New Box Owner</h1>
 
-      <div className='boxOwnerForm'>
-        <div>
-          <div>
-            Step 1: First Name:
-          </div>
-          <div>
-            <input type="text" placeholder="First Name" value={first_name} onChange={handleFirstNameChange} />
-            {errorFirstName !== '' && (
-              <div key='errorFirstName' className='error'>{errorFirstName}</div>
-            )}
+          <div className='boxOwnerForm'>
+            <div>
+              <div className="label_forms">
+                First Name:
+              </div>
+              <div>
+                <input value={first_name} type="text" placeholder="First Name" value={first_name} onChange={handleFirstNameChange} />
+                {errorFirstName !== '' && (
+                  <div key='errorFirstName' className='error'>{errorFirstName}</div>
+                )}
+              </div>
+            </div>
+            <div>
+              <div className="label_forms">
+                Last Name:
+              </div>
+              <div>
+                <input value={last_name} type="text" placeholder="Last Name" onChange={handleLastNameChange} />
+                {errorLastName !== '' && (
+                  <div key='errorLastName' className='error'>{errorLastName}</div>
+                )}
+              </div>
+            </div>
+            <div>
+              <div className="label_forms">
+                Email:
+              </div>
+              <div>
+                <input value={email} type="text" placeholder="Email" onChange={handleEmailChange} />
+                {errorEmail !== '' && (
+                  <div key='errorEmail' className='error'>{errorEmail}</div>
+                )}
+              </div>
+            </div>
+            <div>
+              <button className={`btn btn-outline-primary btn-lg lft-btn ${disableButton}`} onClick={saveBoxOwner} disabled={disableButton == 'disable_btn'}>Save</button>
+              <button className='btn btn-outline-primary btn-lg' onClick={clearBoxOwner}>Cancel</button>
+
+              {error !== '' && (
+                <div key='error' className='error'>{error}</div>
+              )}
+            </div>
           </div>
         </div>
-        <div>
-          <div>
-            Step 2: Last Name:
-          </div>
-          <div>
-            <input type="text" placeholder="Last Name" onChange={handleLastNameChange} />
-            {errorLastName !== '' && (
-              <div key='errorLastName' className='error'>{errorLastName}</div>
-            )}
-          </div>
-        </div>
-        <div>
-          <div>
-            Step 3: Email:
-          </div>
-          <div>
-            <input type="text" placeholder="Email" onChange={handleEmailChange} />
-            {errorEmail !== '' && (
-              <div key='errorEmail' className='error'>{errorEmail}</div>
-            )}
-          </div>
-        </div>
-        <div className='boxPreview'>
+        <div className="col-6">
           <h4>
-          {first_name !== '' && (
-            <span>Your data: {first_name} </span>
-          )}
-          {last_name !== '' && (
-            <span>{last_name}. </span>
-          )}
-          {email !== '' && (
-            <span>Email: {email}</span>
-          )}
+            {first_name !== '' && (
+              <span>Your data: {first_name} </span>
+            )}
+            {last_name !== '' && (
+              <span>{last_name}. </span>
+            )}
+            {email !== '' && (
+              <span>Email: {email}</span>
+            )}
           </h4>
-        </div>
-        <div>
-          <button className='btn-large waves-effect waves-light teal lighten-1' onClick={saveBoxOwner}>Save as new box owner</button>
         </div>
       </div>
     </React.Fragment>

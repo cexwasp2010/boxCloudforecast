@@ -1,9 +1,6 @@
 import React, { useState } from "react"
 import './css/box_list.css'
 
-/* Component to validate fields in form  */
-import { Formik } from "formik";
-
 import PropTypes from "prop-types"
 
 // TODO: Add MouseOver animation using the images for each size; When hovering over the image, the *Open should be visible to our client
@@ -56,6 +53,15 @@ function BoxForm(props) {
     }
   }
 
+  /*To disable button save if any field is empty*/
+  function checkFields(){
+    if (!label || size == "no_selection"){
+      setDisableButton('disable_btn');
+    }else{
+      setDisableButton('');
+    }
+  }
+  
   const boxImage = (size) => {
     switch (size) {
       case 'small':
@@ -71,20 +77,22 @@ function BoxForm(props) {
 
   const handleSizeChange = (event) => {
     setSize(event.target.value);
-    if (!label){
-      setDisableButton('disable_btn');
-    }else{
-      setDisableButton('');
-    }
+    /*Call function that check empty fields*/  
+    checkFields();
   }
 
   const handleLabel = (e) => {
     setLabel(e.target.value);
-    if (size == "no_selection"){
-      setDisableButton('disable_btn');
-    }else{
-      setDisableButton('');
-    }
+    /*Call function that check empty fields*/  
+    checkFields();
+  }
+
+  /*Function that set empty form fields*/  
+  const clearBox = (e) => {
+    e.preventDefault();
+    setDisableButton('disable_btn');
+    setLabel("");
+    setSize("no_selection");
   }
 
   return (
@@ -115,15 +123,15 @@ function BoxForm(props) {
                  Label
               </div>
               <div>
-                <input type="text" placeholder="Label" onChange={handleLabel} />
+                <input value={label} type="text" placeholder="Label" onChange={handleLabel} />
                 {errorLabel !== '' && (
                   <div key='errorLabel' className='error'>{errorLabel}</div>
                 )}
               </div>
             </div>
             <div>
-              <button className={`btn btn-outline-primary btn-lg lft-btn ${disableButton}`} onClick={saveBox}>Save</button>
-              <button className='btn btn-outline-primary btn-lg' onClick={saveBox}>Cancel</button>
+              <button className={`btn btn-outline-primary btn-lg lft-btn ${disableButton}`} onClick={saveBox} disabled={disableButton == 'disable_btn'}>Save</button>
+              <button className='btn btn-outline-primary btn-lg' onClick={clearBox}>Cancel</button>
 
               {error !== '' && (
                 <div key='error' className='error'>{error}</div>
@@ -132,7 +140,7 @@ function BoxForm(props) {
           </div>
         </div>
         <div className="col-6">
-          <div className='boxPreview'>
+          <div>
             <img src={boxImage(size)}/>
 
             {label !== '' && (

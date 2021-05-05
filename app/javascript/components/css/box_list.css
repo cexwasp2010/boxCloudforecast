@@ -73,6 +73,7 @@ select {
 }
 
 input {
+	color: #6C757D;
 	height: 36px;
 	width: 255px;
 	left: 0px;
@@ -103,4 +104,8 @@ input {
 	padding: 12px 18px;
 	box-sizing: border-box;
 	border-radius: 4px;
+}
+
+th img, td img{
+  cursor: pointer;
 }

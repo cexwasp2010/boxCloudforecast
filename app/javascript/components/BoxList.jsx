@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
+import Modal from "./Modal"
 import './css/index.css'
 import './css/box_list.css'
 
@@ -13,6 +14,9 @@ import axios from 'axios';
 function BoxList(props) {
   
   const [error, setError] = useState('')
+  const [show, setShow] = useState(false)
+  const [boxId, setBoxId] = useState('')
+  const [boxOwner, setBoxOwner] = useState('no_selection')
 
   const boxImage = (size) => {
     
@@ -27,8 +31,6 @@ function BoxList(props) {
   }
 
   const deleteBox = (id) => {
-    console.log('delete box: ' + id)
-    
     axios.delete(`/ajax_delete`, {data: {id}})
     .then(res => {
       if (res.data.success) {
@@ -40,9 +42,44 @@ function BoxList(props) {
     })
   }
 
+  const showModal = (b_id, b_o) => {
+    setBoxId(b_id);
+    /*Check if box_owner_ids isn't null*/
+    if(b_o){
+      setBoxOwner(b_o);
+    }
+    setShow(true);
+  }
+
+  const hideModal = () => {
+    setBoxId('');
+    setBoxOwner('');
+    setShow(false);
+  }
+
   return (
     <React.Fragment>
       <div className="row">
+        <div className={`modal display-block ${show ? "display-block" : "display-none"}`}>
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">Attach Box Owner to Box</h5>
+                <button type="button" className="close" onClick={hideModal} aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div className="modal-body">
+                <Modal key={boxId} box_owners={props.box_owners} box_owner={boxOwner} box_id={boxId} />
+              </div>
+              <div className="modal-footer">
+                <button className='btn btn-secondary btn-sm float-right' type="button" onClick={hideModal}>
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="col-6">
           <h1>Boxes</h1>
 
@@ -67,7 +104,8 @@ function BoxList(props) {
                 props.boxes.map((box) => (
                   <tr key={`id-${box.id}`}>
                     <td>
-                      <img src={boxImage(box.size)} width="32px" height="32px" />
+                      <!-- When click on this show modal to attach Box Owner-->
+                      <img src={boxImage(box.size)} width="32px" height="32px" onClick={() => showModal(box.id, box.box_owners_id)}  />
                     </td>
 
                     <td>
@@ -83,7 +121,7 @@ function BoxList(props) {
                     </td>
 
                     <th scope="row">
-                      <img src={Delete} alt="Delete image" />
+                      <img src={Delete} alt="Delete image" onClick={() => deleteBox(box.id)} />
                     </th>
                   </tr>
                 ))

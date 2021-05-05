@@ -2,6 +2,9 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 import BoxOwner from "./BoxOwner"
 import './css/index.css'
+import './css/box_list.css'
+
+import Delete from './images/delete.png'
 
 import axios from 'axios';
 
@@ -23,30 +26,63 @@ function BoxOwnerList(props) {
 
   return (
     <React.Fragment>
-      <label>
-        Total BoxOwners: {props.total}
-      </label>
       <div className="row">
+        <div className="col-6">
 
-        {error !== '' && (
-          <div key='error' className='error'>{error}</div>
-        )}
+          <h1>Box Owners</h1>
 
-        {props.box_owners && (
-          props.box_owners.map((box_owner) => (
-            <div key={`info-${box_owner.id}`} className='col s12 m4'>
-              <BoxOwner key={box_owner.id} first_name={box_owner.first_name} last_name={box_owner.last_name} email={box_owner.email} />
+          <label>
+            Total BoxOwners: {props.total}
+          </label>
 
-              <div key={`id-${box_owner.id}`}>
-                ID: {box_owner.id}
-              </div>
+          {error !== '' && (
+            <div key='error' className='error'>{error}</div>
+          )}
 
-              <div  className='center'>
-                <button className='btn-large waves-effect waves-light teal lighten-1' key={`delete-${box_owner.id}`} onClick={() => deleteBoxOwner(box_owner.id)}>Delete</button>
-              </div>
-            </div>
-          ))
-        )}
+          <table className="table">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">First name</th>
+                <th scope="col">Last name</th>
+                <th scope="col">email</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              {props.box_owners && (
+                props.box_owners.map((box_owner) => (
+                  <tr key={`id-${box_owner.id}`}>
+                    <td>
+                      {box_owner.id}
+                    </td>
+
+                    <td>
+                      {box_owner.first_name}
+                    </td>
+
+                    <td>
+                      {box_owner.last_name}
+                    </td>
+                    
+                    <td>
+                      {box_owner.email}
+                    </td>
+
+                    <th scope="row">
+                      <img src={Delete} alt="Delete image" onClick={() => deleteBoxOwner(box_owner.id)} />
+                    </th>
+                  </tr>
+                ))
+              )}
+            </tbody>
+          </table>
+        </div>
+        <div className="col-6">
+          <a href="/box_owners/new" type="button" className="float-right btn btn-primary btn-md">
+            New BoxOwner
+          </a>
+        </div>
       </div>
     </React.Fragment>
   );
