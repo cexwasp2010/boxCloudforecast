@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 import Modal from "./Modal"
+import EditModal from "./EditModal"
 import './css/index.css'
 import './css/box_list.css'
 
@@ -11,6 +12,7 @@ import MediumBoxOpen from './images/box-medium-open.png'
 import LargeBox from './images/box-large.png'
 import LargeBoxOpen from './images/box-large-open.png'
 import Delete from './images/delete.png'
+import Edit from './images/edit.png'
 
 import axios from 'axios';
 
@@ -20,6 +22,7 @@ function BoxList(props) {
   const [show, setShow] = useState(false)
   const [boxId, setBoxId] = useState('')
   const [boxOwner, setBoxOwner] = useState('no_selection')
+  const [label, setLabel] = useState('')
 
   const boxImage = (size, open) => {
     
@@ -47,33 +50,48 @@ function BoxList(props) {
 
   const showModal = (b_id, b_o) => {
     setBoxId(b_id);
-    /*Check if box_owner_ids isn't null*/
+    /*Check if box_owner_ids is or not null to set default value*/
     if(b_o){
       setBoxOwner(b_o);
+    }else{
+      setBoxOwner('no_selection');
     }
     setShow(true);
   }
 
   const hideModal = () => {
     setBoxId('');
-    setBoxOwner('');
+    setBoxOwner('no_selection');
     setShow(false);
+    setLabel('');
+  }
+
+  const showEditModal = (b_id,b_l) => {
+    setBoxId(b_id);
+    setLabel(b_l);
+    setShow(true);
   }
 
   return (
     <React.Fragment>
-      <div className="row">
+      <div key='modal-box' className="row">
         <div className={`modal display-block ${show ? "display-block" : "display-none"}`}>
           <div className="modal-dialog" role="document">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title">Attach Box Owner to Box</h5>
+                <h5 style={{display: !label ? 'block' : 'none' }} className="modal-title">Attach Box Owner to Box</h5>
+                <h5 style={{display: label ? 'block' : 'none' }} className="modal-title">Updatre Box's label</h5>
                 <button type="button" className="close" onClick={hideModal} aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div className="modal-body">
-                <Modal key={boxId} box_owners={props.box_owners} box_owner={boxOwner} box_id={boxId} />
+                <div style={{display: !label ? 'block' : 'none' }}>
+                  <Modal key={boxId} box_owners={props.box_owners} box_owner={boxOwner} box_id={boxId} />
+                </div>
+                <div style={{display: label ? 'block' : 'none' }}>
+                  <EditModal key={`modal-${boxId}`} label={label} box_id={boxId} />
+                </div>
               </div>
               <div className="modal-footer">
                 <button className='btn btn-secondary btn-sm float-right' type="button" onClick={hideModal}>
@@ -122,6 +140,10 @@ function BoxList(props) {
                     <td>
                       {box.id}
                     </td>
+
+                    <th scope="row">
+                      <img src={Edit} alt="Edit image" width="14px" height="18px" onClick={() => showEditModal(box.id, box.label)} />
+                    </th>
 
                     <th scope="row">
                       <img src={Delete} alt="Delete image" onClick={() => deleteBox(box.id)} />

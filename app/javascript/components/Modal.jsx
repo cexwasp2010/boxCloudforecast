@@ -47,12 +47,12 @@ function Modal(props) {
             ))
           )}
         </select>
-          {errorBoxOwner !== '' && (
-            <div key='errorBoxOwner' className='error'>{errorBoxOwner}</div>
-          )}
-          {errorModal !== '' && (
-            <div key='errorModal' className='error'>{errorModal}</div>
-          )}
+        {errorBoxOwner !== '' && (
+          <div key='errorBoxOwner' className='error'>{errorBoxOwner}</div>
+        )}
+        {errorModal !== '' && (
+          <div key='errorModal' className='error'>{errorModal}</div>
+        )}
         <div>
           <button className={`btn btn-primary btn-md ${disableButton}`} type="button" onClick={attachBoxOwner} disabled={disableButton == 'disable_btn'}>Atthach</button>
         </div>

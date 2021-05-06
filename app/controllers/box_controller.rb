@@ -1,5 +1,5 @@
 class BoxController < ApplicationController
-  skip_before_action :verify_authenticity_token, :only => [:ajax_post, :ajax_delete, :attach_box_owner]
+  skip_before_action :verify_authenticity_token, :only => [:ajax_post, :ajax_delete, :attach_box_owner, :update]
 
   def index
     @boxes = Box.all.order(id: :desc)
@@ -16,6 +16,16 @@ class BoxController < ApplicationController
 
   def update
     # TODO: Add Box Update logic; Users should only be able to update the label (but not the size)
+    # Implement!
+    label = params[:label]
+    id = params.require(:id)
+    begin
+      if Box.find(id).update(label: label)
+        render json: {success: true}
+      end
+    rescue Exception => e
+      render json: {success: false, error: e.message}
+    end
   end
 
   def show

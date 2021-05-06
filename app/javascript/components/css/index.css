@@ -1,18 +1,28 @@
 /* TODO: Improve overall App design;
     You are encouraged to use any CSS framework to provide a clean and easy-to-use UI to use for users */
 
+/*Implemented! Whit bootstrap and own classes and styles*/
 * {
 
 }
+
+.nav {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 select {
   display: block !important;
 }
+
 .show_item{
 	height: 535.219px;
 }
+
 .s12{
 	margin-top: 15px
 }
+
 .error{
 	color: red;
   display: contents;
