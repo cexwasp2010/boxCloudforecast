@@ -5,8 +5,11 @@ import './css/index.css'
 import './css/box_list.css'
 
 import SmallBox from './images/box-small.png'
+import SmallBoxOpen from './images/box-small-open.png'
 import MediumBox from './images/box-medium.png'
+import MediumBoxOpen from './images/box-medium-open.png'
 import LargeBox from './images/box-large.png'
+import LargeBoxOpen from './images/box-large-open.png'
 import Delete from './images/delete.png'
 
 import axios from 'axios';
@@ -18,15 +21,15 @@ function BoxList(props) {
   const [boxId, setBoxId] = useState('')
   const [boxOwner, setBoxOwner] = useState('no_selection')
 
-  const boxImage = (size) => {
+  const boxImage = (size, open) => {
     
     switch (size) {
-      case 'small':
-        return SmallBox
+       case 'small':
+        return open ? SmallBoxOpen : SmallBox;
       case 'medium':
-        return MediumBox
+        return  open ? MediumBoxOpen : MediumBox;
       case 'large':
-        return LargeBox
+        return  open ? LargeBoxOpen : LargeBox;
     }
   }
 
@@ -36,7 +39,7 @@ function BoxList(props) {
       if (res.data.success) {
         window.location.href = '/box'
       } else {
-        // TODO: Handle error and display message to the user
+        // TODO: Handle error and display message to the user Implemented!
         setError(res.data.error)
       }
     })
@@ -104,8 +107,8 @@ function BoxList(props) {
                 props.boxes.map((box) => (
                   <tr key={`id-${box.id}`}>
                     <td>
-                      <!-- When click on this show modal to attach Box Owner-->
-                      <img src={boxImage(box.size)} width="32px" height="32px" onClick={() => showModal(box.id, box.box_owners_id)}  />
+                      {/* When click on this show modal to attach Box Owner */}
+                      <img src={boxImage(box.size, box.open)} width="32px" height="32px" onClick={() => showModal(box.id, box.box_owners_id)}  />
                     </td>
 
                     <td>

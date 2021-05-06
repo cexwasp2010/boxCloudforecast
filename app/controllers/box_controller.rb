@@ -45,7 +45,8 @@ class BoxController < ApplicationController
   def ajax_post
     size = params[:size]
     label = params.require(:label)
-    if Box.create({size: size, label: label})
+    open = params.require(:open)
+    if Box.create({size: size, label: label, open: open})
       render json: {success: true}
     else
       render json: {success: false, error: e.message}

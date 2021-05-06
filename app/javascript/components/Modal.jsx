@@ -36,7 +36,7 @@ function Modal(props) {
   return (
     <React.Fragment>
       <h6>
-        Attach Box Owner:
+        Select Box Owner:
       </h6>
       <div className="input-field">
         <select value={boxOwner} onChange={handleBoxOwnerChange}>
@@ -54,7 +54,7 @@ function Modal(props) {
             <div key='errorModal' className='error'>{errorModal}</div>
           )}
         <div>
-          <button className={`btn btn-primary btn-md ${disableButton}`} type="button" onClick={attachBoxOwner} disabled={disableButton == 'disable_btn'}>Atthach box owner</button>
+          <button className={`btn btn-primary btn-md ${disableButton}`} type="button" onClick={attachBoxOwner} disabled={disableButton == 'disable_btn'}>Atthach</button>
         </div>
       </div>
     </React.Fragment>

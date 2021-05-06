@@ -3,7 +3,7 @@ import './css/box_list.css'
 
 import PropTypes from "prop-types"
 
-// TODO: Add MouseOver animation using the images for each size; When hovering over the image, the *Open should be visible to our client
+// TODO: Add MouseOver animation using the images for each size; When hovering over the image, the *Open should be visible to our client Implemented!
 import SmallBox from './images/box-small.png'
 import SmallBoxOpen from './images/box-small-open.png'
 import MediumBox from './images/box-medium.png'
@@ -23,9 +23,10 @@ function BoxForm(props) {
   const [error, setError] = useState('')
   const [errorLabel, setErrorLabel] = useState('')
   const [errorSize, setErrorSize] = useState('')
+  const [open, setOpen] = useState(false)
 
   const saveBox = () => {
-    // TODO: Implement form validation to match the DB schema to help users during the Box creation process
+    // TODO: Implement form validation to match the DB schema to help users during the Box creation process Implemented!
 
     /*To check values of label to set error if it isn't valid*/
     if (!label) {
@@ -42,7 +43,8 @@ function BoxForm(props) {
 
     /*To check if the fields don't have any error to permit call post ajax method*/
     if (!(!label || size == "no_selection")) {
-      axios.post(`/ajax_post`, {size: size, label: label})
+      setDisableButton('disable_btn');
+      axios.post(`/ajax_post`, {size: size, label: label, open: open})
       .then(res => {
         if (res.data.success) {
           window.location.href = '/box'
@@ -65,14 +67,19 @@ function BoxForm(props) {
   const boxImage = (size) => {
     switch (size) {
       case 'small':
-        return SmallBox
+        return open ? SmallBoxOpen : SmallBox;
       case 'medium':
-        return MediumBox
+        return open ? MediumBoxOpen : MediumBox;
       case 'large':
-        return LargeBox
+        return open ? LargeBoxOpen : LargeBox;
       default:
         return NoSelection
     }
+  }
+
+  /*Set open attribute for box*/
+  const openCloseImage = () => {
+    setOpen(!open)
   }
 
   const handleSizeChange = (event) => {
@@ -141,7 +148,7 @@ function BoxForm(props) {
         </div>
         <div className="col-6">
           <div>
-            <img src={boxImage(size)}/>
+            <img src={boxImage(size)} onMouseOver={openCloseImage} />
 
             {label !== '' && (
               <h4>Preview: {label}</h4>

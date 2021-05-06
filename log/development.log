@@ -45833,3 +45833,1744 @@ Processing by BoxOwnersController#new as HTML
 Completed 200 OK in 65ms (Views: 60.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/box/new" for ::1 at 2021-05-05 21:02:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BoxController#new as HTML
+  Rendering box/new.html.erb within layouts/application
+  Rendered box/new.html.erb within layouts/application (7.9ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: c589abe8e2969d608478
+Version: webpack 4.46.0
+Time: 13631ms
+Built at: 05/05/2021 21:02:49
+                                                                       Asset       Size            Chunks                         Chunk Names
+                                      js/application-6f5697c7d26905b0f1f0.js   4.14 MiB       application  [emitted] [immutable]  application
+                                  js/application-6f5697c7d26905b0f1f0.js.map   4.41 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js   1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map   1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-019182333b16b2885c8a.js   3.26 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-019182333b16b2885c8a.js.map   3.46 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json   2.29 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png   7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png   7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png    5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png   7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png   5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png   6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png   1.47 KiB                    [emitted]              
+         media/components/images/delete-262191f0f8800890a2a3c5e89013f098.png  231 bytes                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico   6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png   4.01 KiB                    [emitted]              
+Entrypoint application = js/application-6f5697c7d26905b0f1f0.js js/application-6f5697c7d26905b0f1f0.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-019182333b16b2885c8a.js js/server_rendering-019182333b16b2885c8a.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1.15 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 432 hidden modules
+
+WARNING in ./app/javascript/components/BoxList.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/cesar/Documentos/test/boxCloudforecast/app/javascript/components/BoxList.jsx: Unexpected token (107:23)
+
+  105 |                   <tr key={`id-${box.id}`}>
+  106 |                     <td>
+> 107 |                       <!-- When click on this show modal to attach Box Owner-->
+      |                        ^
+  108 |                       <img src={boxImage(box.size)} width="32px" height="32px" onClick={() => showModal(box.id, box.box_owners_id)}  />
+  109 |                     </td>
+  110 |
+    at Object._raise (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:776:17)
+    at Object.raiseWithData (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:769:17)
+    at Object.raise (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:737:17)
+    at Object.unexpected (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:9736:16)
+    at Object.jsxParseIdentifier (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:4943:12)
+    at Object.jsxParseNamespacedName (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:4953:23)
+    at Object.jsxParseElementName (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:4964:21)
+    at Object.jsxParseOpeningElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5051:22)
+    at Object.jsxParseElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5084:33)
+    at Object.jsxParseElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5100:32)
+    at Object.jsxParseElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5100:32)
+    at Object.jsxParseElement (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5158:17)
+    at Object.parseExprAtom (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5165:19)
+    at Object.parseExprSubscripts (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10709:23)
+    at Object.parseUpdate (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10689:21)
+    at Object.parseMaybeUnary (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10667:23)
+    at Object.parseExprOps (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10524:23)
+    at Object.parseMaybeConditional (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10498:23)
+    at Object.parseMaybeAssign (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10461:21)
+    at allowInAnd (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10428:39)
+    at Object.allowInAnd (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:12105:12)
+    at Object.parseMaybeAssignAllowIn (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10428:17)
+    at Object.parseParenAndDistinguishExpression (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:11309:28)
+    at Object.parseExprAtom (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:11027:21)
+    at Object.parseExprAtom (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5170:20)
+    at Object.parseExprSubscripts (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10709:23)
+    at Object.parseUpdate (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10689:21)
+    at Object.parseMaybeUnary (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10667:23)
+    at Object.parseExprOps (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10524:23)
+    at Object.parseMaybeConditional (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10498:23)
+ @ ./app/javascript/components sync ^\.\/.*$ ./BoxList.jsx
+ @ ./app/javascript/packs/application.js
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (29.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 18720ms (Views: 18707.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/box/new" for ::1 at 2021-05-05 21:09:50 -0500
+Processing by BoxController#new as HTML
+  Rendering box/new.html.erb within layouts/application
+  Rendered box/new.html.erb within layouts/application (1.1ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 51ba99f193592a24591d
+Version: webpack 4.46.0
+Time: 13623ms
+Built at: 05/05/2021 21:10:20
+                                                                       Asset       Size            Chunks                         Chunk Names
+                                      js/application-e4fc332e47d8aab64a13.js   4.14 MiB       application  [emitted] [immutable]  application
+                                  js/application-e4fc332e47d8aab64a13.js.map   4.41 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js   1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map   1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-fb07477fdb060e5845c7.js   3.26 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-fb07477fdb060e5845c7.js.map   3.46 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json   2.29 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png   7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png   7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png    5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png   7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png   5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png   6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png   1.47 KiB                    [emitted]              
+         media/components/images/delete-262191f0f8800890a2a3c5e89013f098.png  231 bytes                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico   6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png   4.01 KiB                    [emitted]              
+Entrypoint application = js/application-e4fc332e47d8aab64a13.js js/application-e4fc332e47d8aab64a13.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-fb07477fdb060e5845c7.js js/server_rendering-fb07477fdb060e5845c7.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1.15 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 432 hidden modules
+
+WARNING in ./app/javascript/components/BoxList.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/cesar/Documentos/test/boxCloudforecast/app/javascript/components/BoxList.jsx: Unexpected token (107:23)
+
+  105 |                   <tr key={`id-${box.id}`}>
+  106 |                     <td>
+> 107 |                       <!-- When click on this show modal to attach Box Owner-->
+      |                        ^
+  108 |                       <img src={boxImage(box.size)} width="32px" height="32px" onClick={() => showModal(box.id, box.box_owners_id)}  />
+  109 |                     </td>
+  110 |
+    at Object._raise (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:776:17)
+    at Object.raiseWithData (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:769:17)
+    at Object.raise (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:737:17)
+    at Object.unexpected (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:9736:16)
+    at Object.jsxParseIdentifier (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:4943:12)
+    at Object.jsxParseNamespacedName (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:4953:23)
+    at Object.jsxParseElementName (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:4964:21)
+    at Object.jsxParseOpeningElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5051:22)
+    at Object.jsxParseElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5084:33)
+    at Object.jsxParseElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5100:32)
+    at Object.jsxParseElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5100:32)
+    at Object.jsxParseElement (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5158:17)
+    at Object.parseExprAtom (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5165:19)
+    at Object.parseExprSubscripts (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10709:23)
+    at Object.parseUpdate (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10689:21)
+    at Object.parseMaybeUnary (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10667:23)
+    at Object.parseExprOps (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10524:23)
+    at Object.parseMaybeConditional (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10498:23)
+    at Object.parseMaybeAssign (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10461:21)
+    at allowInAnd (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10428:39)
+    at Object.allowInAnd (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:12105:12)
+    at Object.parseMaybeAssignAllowIn (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10428:17)
+    at Object.parseParenAndDistinguishExpression (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:11309:28)
+    at Object.parseExprAtom (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:11027:21)
+    at Object.parseExprAtom (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5170:20)
+    at Object.parseExprSubscripts (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10709:23)
+    at Object.parseUpdate (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10689:21)
+    at Object.parseMaybeUnary (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10667:23)
+    at Object.parseExprOps (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10524:23)
+    at Object.parseMaybeConditional (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10498:23)
+ @ ./app/javascript/components sync ^\.\/.*$ ./BoxList.jsx
+ @ ./app/javascript/packs/application.js
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (24.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 19722ms (Views: 19719.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-05 21:10:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (19.0ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (19.3ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.1ms)
+Started GET "/box/new" for ::1 at 2021-05-05 21:19:02 -0500
+Processing by BoxController#new as HTML
+  Rendering box/new.html.erb within layouts/application
+  Rendered box/new.html.erb within layouts/application (1.2ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 5477ed964714027441ad
+Version: webpack 4.46.0
+Time: 13459ms
+Built at: 05/05/2021 21:19:22
+                                                                       Asset       Size            Chunks                         Chunk Names
+                                      js/application-dcba0612b6edac6e5af2.js   4.14 MiB       application  [emitted] [immutable]  application
+                                  js/application-dcba0612b6edac6e5af2.js.map   4.41 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js   1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map   1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-905e51a6b48d67c8a7c7.js   3.26 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-905e51a6b48d67c8a7c7.js.map   3.46 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json   2.29 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png   7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png   7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png    5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png   7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png   5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png   6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png   1.47 KiB                    [emitted]              
+         media/components/images/delete-262191f0f8800890a2a3c5e89013f098.png  231 bytes                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico   6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png   4.01 KiB                    [emitted]              
+Entrypoint application = js/application-dcba0612b6edac6e5af2.js js/application-dcba0612b6edac6e5af2.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-905e51a6b48d67c8a7c7.js js/server_rendering-905e51a6b48d67c8a7c7.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1.15 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 432 hidden modules
+
+WARNING in ./app/javascript/components/BoxList.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/cesar/Documentos/test/boxCloudforecast/app/javascript/components/BoxList.jsx: Unexpected token (107:23)
+
+  105 |                   <tr key={`id-${box.id}`}>
+  106 |                     <td>
+> 107 |                       <!-- When click on this show modal to attach Box Owner-->
+      |                        ^
+  108 |                       <img src={boxImage(box.size)} width="32px" height="32px" onClick={() => showModal(box.id, box.box_owners_id)}  />
+  109 |                     </td>
+  110 |
+    at Object._raise (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:776:17)
+    at Object.raiseWithData (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:769:17)
+    at Object.raise (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:737:17)
+    at Object.unexpected (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:9736:16)
+    at Object.jsxParseIdentifier (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:4943:12)
+    at Object.jsxParseNamespacedName (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:4953:23)
+    at Object.jsxParseElementName (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:4964:21)
+    at Object.jsxParseOpeningElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5051:22)
+    at Object.jsxParseElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5084:33)
+    at Object.jsxParseElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5100:32)
+    at Object.jsxParseElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5100:32)
+    at Object.jsxParseElement (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5158:17)
+    at Object.parseExprAtom (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5165:19)
+    at Object.parseExprSubscripts (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10709:23)
+    at Object.parseUpdate (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10689:21)
+    at Object.parseMaybeUnary (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10667:23)
+    at Object.parseExprOps (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10524:23)
+    at Object.parseMaybeConditional (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10498:23)
+    at Object.parseMaybeAssign (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10461:21)
+    at allowInAnd (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10428:39)
+    at Object.allowInAnd (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:12105:12)
+    at Object.parseMaybeAssignAllowIn (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10428:17)
+    at Object.parseParenAndDistinguishExpression (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:11309:28)
+    at Object.parseExprAtom (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:11027:21)
+    at Object.parseExprAtom (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5170:20)
+    at Object.parseExprSubscripts (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10709:23)
+    at Object.parseUpdate (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10689:21)
+    at Object.parseMaybeUnary (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10667:23)
+    at Object.parseExprOps (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10524:23)
+    at Object.parseMaybeConditional (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10498:23)
+ @ ./app/javascript/components sync ^\.\/.*$ ./BoxList.jsx
+ @ ./app/javascript/packs/application.js
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (23.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 19804ms (Views: 19801.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-05 21:19:23 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (32.4ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.7ms)
+Started GET "/box/new" for ::1 at 2021-05-05 21:33:29 -0500
+Processing by BoxController#new as HTML
+  Rendering box/new.html.erb within layouts/application
+  Rendered box/new.html.erb within layouts/application (1.4ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 5acaf82dbcbf28826725
+Version: webpack 4.46.0
+Time: 13154ms
+Built at: 05/05/2021 21:33:48
+                                                                       Asset       Size            Chunks                         Chunk Names
+                                      js/application-e0d6f0380139491d4549.js   4.14 MiB       application  [emitted] [immutable]  application
+                                  js/application-e0d6f0380139491d4549.js.map   4.41 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js   1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map   1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-b109b20cd47e46e47434.js   3.26 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-b109b20cd47e46e47434.js.map   3.46 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json   2.29 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png   7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png   7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png    5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png   7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png   5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png   6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png   1.47 KiB                    [emitted]              
+         media/components/images/delete-262191f0f8800890a2a3c5e89013f098.png  231 bytes                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico   6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png   4.01 KiB                    [emitted]              
+Entrypoint application = js/application-e0d6f0380139491d4549.js js/application-e0d6f0380139491d4549.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-b109b20cd47e46e47434.js js/server_rendering-b109b20cd47e46e47434.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1.15 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 432 hidden modules
+
+WARNING in ./app/javascript/components/BoxList.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/cesar/Documentos/test/boxCloudforecast/app/javascript/components/BoxList.jsx: Unexpected token (107:23)
+
+  105 |                   <tr key={`id-${box.id}`}>
+  106 |                     <td>
+> 107 |                       <!-- When click on this show modal to attach Box Owner-->
+      |                        ^
+  108 |                       <img src={boxImage(box.size)} width="32px" height="32px" onClick={() => showModal(box.id, box.box_owners_id)}  />
+  109 |                     </td>
+  110 |
+    at Object._raise (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:776:17)
+    at Object.raiseWithData (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:769:17)
+    at Object.raise (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:737:17)
+    at Object.unexpected (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:9736:16)
+    at Object.jsxParseIdentifier (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:4943:12)
+    at Object.jsxParseNamespacedName (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:4953:23)
+    at Object.jsxParseElementName (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:4964:21)
+    at Object.jsxParseOpeningElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5051:22)
+    at Object.jsxParseElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5084:33)
+    at Object.jsxParseElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5100:32)
+    at Object.jsxParseElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5100:32)
+    at Object.jsxParseElement (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5158:17)
+    at Object.parseExprAtom (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5165:19)
+    at Object.parseExprSubscripts (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10709:23)
+    at Object.parseUpdate (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10689:21)
+    at Object.parseMaybeUnary (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10667:23)
+    at Object.parseExprOps (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10524:23)
+    at Object.parseMaybeConditional (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10498:23)
+    at Object.parseMaybeAssign (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10461:21)
+    at allowInAnd (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10428:39)
+    at Object.allowInAnd (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:12105:12)
+    at Object.parseMaybeAssignAllowIn (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10428:17)
+    at Object.parseParenAndDistinguishExpression (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:11309:28)
+    at Object.parseExprAtom (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:11027:21)
+    at Object.parseExprAtom (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5170:20)
+    at Object.parseExprSubscripts (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10709:23)
+    at Object.parseUpdate (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10689:21)
+    at Object.parseMaybeUnary (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10667:23)
+    at Object.parseExprOps (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10524:23)
+    at Object.parseMaybeConditional (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10498:23)
+ @ ./app/javascript/components sync ^\.\/.*$ ./BoxList.jsx
+ @ ./app/javascript/packs/application.js
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (30.3ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 18528ms (Views: 18525.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-05 21:33:49 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (14.4ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (56.4ms)
+  [1m[36mBox Load (5.1ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+Started POST "/ajax_post" for ::1 at 2021-05-05 21:36:18 -0500
+Processing by BoxController#ajax_post as HTML
+  Parameters: {"size"=>"medium", "label"=>"open medium", "box"=>{"size"=>"medium", "label"=>"open medium"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[32mINSERT INTO "boxes" ("size", "label", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["size", "medium"], ["label", "0102020078c621c65ea3002ffcd78174783acc07f0c0742ca9b5012b8f3b940092b9f94f7d0183d97467ffe483320fc88ffb3ab2ea0e00000069306706092a864886f70d010706a05a3058020100305306092a864886f70d010701301e060960864801650304012e3011040ca4da43b55e2ad2672a87864a0201108026ebb48244b19206ded1e2a82645175316ce4d3e6e0b6db024f8be79750a4d1447d331d8284f89"], ["created_at", "2021-05-06 02:36:19.344295"], ["updated_at", "2021-05-06 02:36:19.344295"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 724ms (Views: 0.5ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/box" for ::1 at 2021-05-05 21:36:19 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.7ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (408.3ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 2e8104b2e24f30a2f9c7
+Version: webpack 4.46.0
+Time: 14749ms
+Built at: 05/05/2021 21:36:40
+                                                                       Asset       Size            Chunks                         Chunk Names
+                                      js/application-44aa0f5354eb0dcd3140.js   4.14 MiB       application  [emitted] [immutable]  application
+                                  js/application-44aa0f5354eb0dcd3140.js.map   4.41 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js   1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map   1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-d119873b0a2e74c31437.js   3.26 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-d119873b0a2e74c31437.js.map   3.46 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json   2.29 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png   7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png   7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png    5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png   7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png   5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png   6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png   1.47 KiB                    [emitted]              
+         media/components/images/delete-262191f0f8800890a2a3c5e89013f098.png  231 bytes                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico   6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png   4.01 KiB                    [emitted]              
+Entrypoint application = js/application-44aa0f5354eb0dcd3140.js js/application-44aa0f5354eb0dcd3140.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-d119873b0a2e74c31437.js js/server_rendering-d119873b0a2e74c31437.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1.15 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 432 hidden modules
+
+WARNING in ./app/javascript/components/BoxList.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/cesar/Documentos/test/boxCloudforecast/app/javascript/components/BoxList.jsx: Unexpected token (107:23)
+
+  105 |                   <tr key={`id-${box.id}`}>
+  106 |                     <td>
+> 107 |                       <!-- When click on this show modal to attach Box Owner-->
+      |                        ^
+  108 |                       <img src={boxImage(box.size)} width="32px" height="32px" onClick={() => showModal(box.id, box.box_owners_id)}  />
+  109 |                     </td>
+  110 |
+    at Object._raise (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:776:17)
+    at Object.raiseWithData (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:769:17)
+    at Object.raise (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:737:17)
+    at Object.unexpected (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:9736:16)
+    at Object.jsxParseIdentifier (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:4943:12)
+    at Object.jsxParseNamespacedName (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:4953:23)
+    at Object.jsxParseElementName (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:4964:21)
+    at Object.jsxParseOpeningElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5051:22)
+    at Object.jsxParseElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5084:33)
+    at Object.jsxParseElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5100:32)
+    at Object.jsxParseElementAt (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5100:32)
+    at Object.jsxParseElement (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5158:17)
+    at Object.parseExprAtom (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5165:19)
+    at Object.parseExprSubscripts (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10709:23)
+    at Object.parseUpdate (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10689:21)
+    at Object.parseMaybeUnary (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10667:23)
+    at Object.parseExprOps (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10524:23)
+    at Object.parseMaybeConditional (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10498:23)
+    at Object.parseMaybeAssign (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10461:21)
+    at allowInAnd (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10428:39)
+    at Object.allowInAnd (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:12105:12)
+    at Object.parseMaybeAssignAllowIn (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10428:17)
+    at Object.parseParenAndDistinguishExpression (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:11309:28)
+    at Object.parseExprAtom (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:11027:21)
+    at Object.parseExprAtom (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:5170:20)
+    at Object.parseExprSubscripts (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10709:23)
+    at Object.parseUpdate (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10689:21)
+    at Object.parseMaybeUnary (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10667:23)
+    at Object.parseExprOps (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10524:23)
+    at Object.parseMaybeConditional (/home/cesar/Documentos/test/boxCloudforecast/node_modules/@babel/parser/lib/index.js:10498:23)
+ @ ./app/javascript/components sync ^\.\/.*$ ./BoxList.jsx
+ @ ./app/javascript/packs/application.js
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (35.5ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 21212ms (Views: 20979.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/box" for ::1 at 2021-05-05 21:38:01 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.8ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (366.9ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 3be3d1b12760c7531992
+Version: webpack 4.46.0
+Time: 14191ms
+Built at: 05/05/2021 21:38:21
+                                                                       Asset       Size            Chunks                         Chunk Names
+                                      js/application-42c2030c1f02c0abd590.js   4.15 MiB       application  [emitted] [immutable]  application
+                                  js/application-42c2030c1f02c0abd590.js.map   4.41 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js   1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map   1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-8722bc079364c1945f86.js   3.27 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-8722bc079364c1945f86.js.map   3.47 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json   2.29 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png   7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png   7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png    5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png   7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png   5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png   6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png   1.47 KiB                    [emitted]              
+         media/components/images/delete-262191f0f8800890a2a3c5e89013f098.png  231 bytes                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico   6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png   4.01 KiB                    [emitted]              
+Entrypoint application = js/application-42c2030c1f02c0abd590.js js/application-42c2030c1f02c0abd590.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-8722bc079364c1945f86.js js/server_rendering-8722bc079364c1945f86.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1.15 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 432 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (28.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 20514ms (Views: 19956.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-05 21:38:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (31.3ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (82.4ms)
+  [1m[36mBox Load (0.4ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+Started GET "/box/new" for ::1 at 2021-05-05 21:41:39 -0500
+Processing by BoxController#new as HTML
+  Rendering box/new.html.erb within layouts/application
+  Rendered box/new.html.erb within layouts/application (0.9ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 051c724335b1baaab5d8
+Version: webpack 4.46.0
+Time: 16172ms
+Built at: 05/05/2021 21:42:02
+                                                                       Asset       Size            Chunks                         Chunk Names
+                                      js/application-7e26803a6da9b5d1902e.js   4.15 MiB       application  [emitted] [immutable]  application
+                                  js/application-7e26803a6da9b5d1902e.js.map   4.41 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js   1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map   1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-477ea7884c40d7d073f3.js   3.27 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-477ea7884c40d7d073f3.js.map   3.47 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json   2.29 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png   7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png   7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png    5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png   7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png   5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png   6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png   1.47 KiB                    [emitted]              
+         media/components/images/delete-262191f0f8800890a2a3c5e89013f098.png  231 bytes                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico   6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png   4.01 KiB                    [emitted]              
+Entrypoint application = js/application-7e26803a6da9b5d1902e.js js/application-7e26803a6da9b5d1902e.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-477ea7884c40d7d073f3.js js/server_rendering-477ea7884c40d7d073f3.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1.15 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 432 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (31.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 23130ms (Views: 23126.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ajax_post" for ::1 at 2021-05-05 21:43:02 -0500
+Processing by BoxController#ajax_post as HTML
+  Parameters: {"size"=>"large", "label"=>"Large open", "open"=>true, "box"=>{"size"=>"large", "label"=>"Large open", "open"=>true}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "boxes" ("size", "label", "open", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["size", "large"], ["label", "0102020078c621c65ea3002ffcd78174783acc07f0c0742ca9b5012b8f3b940092b9f94f7d013345f43494e63a96b66d6766d5cf131400000068306606092a864886f70d010706a0593057020100305206092a864886f70d010701301e060960864801650304012e3011040ca572cf311d1720944522ac56020110802585d11a58e03a83da5f5ff90591fce1c9c2ab1858b6629b1bb16889b4007f01c9a94ee07ccc"], ["open", "t"], ["created_at", "2021-05-06 02:43:03.340317"], ["updated_at", "2021-05-06 02:43:03.340317"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 704ms (Views: 0.4ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/box" for ::1 at 2021-05-05 21:43:03 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.6ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (472.0ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: a4d3dfb8d54dced3e896
+Version: webpack 4.46.0
+Time: 14131ms
+Built at: 05/05/2021 21:43:23
+                                                                       Asset       Size            Chunks                         Chunk Names
+                                      js/application-463caf322b4f306efdd0.js   4.15 MiB       application  [emitted] [immutable]  application
+                                  js/application-463caf322b4f306efdd0.js.map   4.41 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js   1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map   1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-218e329395482735413d.js   3.27 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-218e329395482735413d.js.map   3.47 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json   2.29 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png   7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png   7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png    5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png   7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png   5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png   6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png   1.47 KiB                    [emitted]              
+         media/components/images/delete-262191f0f8800890a2a3c5e89013f098.png  231 bytes                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico   6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png   4.01 KiB                    [emitted]              
+Entrypoint application = js/application-463caf322b4f306efdd0.js js/application-463caf322b4f306efdd0.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-218e329395482735413d.js js/server_rendering-218e329395482735413d.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1.15 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 432 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (28.3ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 20496ms (Views: 20304.3ms | ActiveRecord: 2.3ms)
+
+
+  [1m[36mBox Load (0.4ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+  [1m[35m (1.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (13.6ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 2]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 3]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 4]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 5]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "boxes" WHERE "boxes"."id" = ?[0m  [["id", 6]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/box" for ::1 at 2021-05-05 21:44:10 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.4ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.2ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (3.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (23.5ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 563ms (Views: 40.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-05 21:44:11 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (23.1ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.3ms)
+Started GET "/box_owners" for ::1 at 2021-05-05 21:44:13 -0500
+Processing by BoxOwnersController#index as HTML
+  Rendering box_owners/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "box_owners"[0m
+  [1m[36mBoxOwner Load (0.2ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendered box_owners/index.html.erb within layouts/application (191.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (25.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 232ms (Views: 229.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/box_owners/new" for ::1 at 2021-05-05 21:44:17 -0500
+Processing by BoxOwnersController#new as HTML
+  Rendering box_owners/new.html.erb within layouts/application
+  Rendered box_owners/new.html.erb within layouts/application (0.9ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (30.3ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/box" for ::1 at 2021-05-05 21:44:19 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.3ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.2ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (3.0ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (23.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 498ms (Views: 40.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/box/new" for ::1 at 2021-05-05 21:44:26 -0500
+Processing by BoxController#new as HTML
+  Rendering box/new.html.erb within layouts/application
+  Rendered box/new.html.erb within layouts/application (0.8ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (28.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 45ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ajax_post" for ::1 at 2021-05-05 21:44:38 -0500
+Processing by BoxController#ajax_post as HTML
+  Parameters: {"size"=>"small", "label"=>"small box open", "open"=>true, "box"=>{"size"=>"small", "label"=>"small box open", "open"=>true}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "boxes" ("size", "label", "open", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["size", "small"], ["label", "0102020078c621c65ea3002ffcd78174783acc07f0c0742ca9b5012b8f3b940092b9f94f7d01ff40cc2cf3c5dbbab0a53c619b8b290a0000006c306a06092a864886f70d010706a05d305b020100305606092a864886f70d010701301e060960864801650304012e3011040ce579250379c7a1f035952a850201108029cb5dc32b4b9d80b2ce807c50fcc3fe5fd5dff93c1bb5134355be3f3404c7f6830693581195c77d709b"], ["open", "t"], ["created_at", "2021-05-06 02:44:38.766211"], ["updated_at", "2021-05-06 02:44:38.766211"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 642ms (Views: 0.4ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/box" for ::1 at 2021-05-05 21:44:39 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.3ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (90.9ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (30.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 316ms (Views: 137.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/box/new" for ::1 at 2021-05-05 21:44:41 -0500
+Processing by BoxController#new as HTML
+  Rendering box/new.html.erb within layouts/application
+  Rendered box/new.html.erb within layouts/application (1.1ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (37.5ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 65ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ajax_post" for ::1 at 2021-05-05 21:44:52 -0500
+Processing by BoxController#ajax_post as HTML
+  Parameters: {"size"=>"small", "label"=>"small box close", "open"=>false, "box"=>{"size"=>"small", "label"=>"small box close", "open"=>false}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "boxes" ("size", "label", "open", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["size", "small"], ["label", "0102020078c621c65ea3002ffcd78174783acc07f0c0742ca9b5012b8f3b940092b9f94f7d01d449c354bebd7bfc050480151c589a610000006d306b06092a864886f70d010706a05e305c020100305706092a864886f70d010701301e060960864801650304012e3011040c05cd953b80ade68009a8efc7020110802a54bd1cbc2f211ed7e94d91195f6d3f18bfbf02f287a56866fcdad62961f6d6bf912b7f3651b02035e007"], ["open", "f"], ["created_at", "2021-05-06 02:44:52.759289"], ["updated_at", "2021-05-06 02:44:52.759289"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 621ms (Views: 0.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/box" for ::1 at 2021-05-05 21:44:52 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.3ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (173.7ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (25.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 405ms (Views: 215.2ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+Started GET "/box" for ::1 at 2021-05-05 21:45:49 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.5ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.2ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (243.5ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 53842ea5fc278015602b
+Version: webpack 4.46.0
+Time: 16649ms
+Built at: 05/05/2021 21:46:12
+                                                                       Asset       Size            Chunks                         Chunk Names
+                                      js/application-09ca893abc5660f951a4.js   4.15 MiB       application  [emitted] [immutable]  application
+                                  js/application-09ca893abc5660f951a4.js.map   4.41 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js   1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map   1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-6c75bb9db607cd381425.js   3.27 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-6c75bb9db607cd381425.js.map   3.47 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json   2.29 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png   7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png   7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png    5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png   7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png   5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png   6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png   1.47 KiB                    [emitted]              
+         media/components/images/delete-262191f0f8800890a2a3c5e89013f098.png  231 bytes                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico   6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png   4.01 KiB                    [emitted]              
+Entrypoint application = js/application-09ca893abc5660f951a4.js js/application-09ca893abc5660f951a4.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-6c75bb9db607cd381425.js js/server_rendering-6c75bb9db607cd381425.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1.15 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 432 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (28.8ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 23270ms (Views: 21969.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-05 21:46:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (12.1ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.5ms)
+Started GET "/box" for ::1 at 2021-05-05 21:46:45 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (2.8ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (192.1ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 2b572c6d6f87f88e3598
+Version: webpack 4.46.0
+Time: 15914ms
+Built at: 05/05/2021 21:47:08
+                                                                       Asset       Size            Chunks                         Chunk Names
+                                      js/application-11ef9ffd63c1e31f66f5.js   4.15 MiB       application  [emitted] [immutable]  application
+                                  js/application-11ef9ffd63c1e31f66f5.js.map   4.41 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js   1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map   1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-05a45ab743d065b4572f.js   3.27 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-05a45ab743d065b4572f.js.map   3.47 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json   2.29 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png   7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png   7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png    5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png   7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png   5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png   6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png   1.47 KiB                    [emitted]              
+         media/components/images/delete-262191f0f8800890a2a3c5e89013f098.png  231 bytes                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico   6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png   4.01 KiB                    [emitted]              
+Entrypoint application = js/application-11ef9ffd63c1e31f66f5.js js/application-11ef9ffd63c1e31f66f5.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-05a45ab743d065b4572f.js js/server_rendering-05a45ab743d065b4572f.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1.15 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 432 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (43.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 22889ms (Views: 22285.9ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-05 21:47:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (26.3ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.8ms)
+Started GET "/box_owners/new" for ::1 at 2021-05-05 21:47:35 -0500
+Processing by BoxOwnersController#new as HTML
+  Rendering box_owners/new.html.erb within layouts/application
+  Rendered box_owners/new.html.erb within layouts/application (3.1ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (33.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 95ms (Views: 80.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/box/new" for ::1 at 2021-05-05 21:47:38 -0500
+Processing by BoxController#new as HTML
+  Rendering box/new.html.erb within layouts/application
+  Rendered box/new.html.erb within layouts/application (0.8ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (31.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 52ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ajax_post" for ::1 at 2021-05-05 21:47:51 -0500
+Processing by BoxController#ajax_post as HTML
+  Parameters: {"size"=>"medium", "label"=>"medium box open", "open"=>true, "box"=>{"size"=>"medium", "label"=>"medium box open", "open"=>true}}
+  [1m[35m (1.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "boxes" ("size", "label", "open", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["size", "medium"], ["label", "0102020078c621c65ea3002ffcd78174783acc07f0c0742ca9b5012b8f3b940092b9f94f7d01fe2c92a0c870fb20c24f6c650c3667940000006d306b06092a864886f70d010706a05e305c020100305706092a864886f70d010701301e060960864801650304012e3011040cf836ca40ced81e308a53cd46020110802ac1b92f4845dd63f127002e3ccde71684481bfb7646dbf3d50f096565b171a1462eb807efb46e0e7afb8c"], ["open", "t"], ["created_at", "2021-05-06 02:47:52.446761"], ["updated_at", "2021-05-06 02:47:52.446761"]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 817ms (Views: 2.9ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/box" for ::1 at 2021-05-05 21:47:52 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.3ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (282.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (33.7ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 533ms (Views: 331.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/box/new" for ::1 at 2021-05-05 21:47:55 -0500
+Processing by BoxController#new as HTML
+  Rendering box/new.html.erb within layouts/application
+  Rendered box/new.html.erb within layouts/application (4.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (29.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ajax_post" for ::1 at 2021-05-05 21:48:05 -0500
+Processing by BoxController#ajax_post as HTML
+  Parameters: {"size"=>"medium", "label"=>"medium box close", "open"=>true, "box"=>{"size"=>"medium", "label"=>"medium box close", "open"=>true}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "boxes" ("size", "label", "open", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["size", "medium"], ["label", "0102020078c621c65ea3002ffcd78174783acc07f0c0742ca9b5012b8f3b940092b9f94f7d01b9c12d6659c76df4c6b82aa619a7a1720000006e306c06092a864886f70d010706a05f305d020100305806092a864886f70d010701301e060960864801650304012e3011040cdcd60906f686c4b231d4406b020110802b068c680bd51ce6ee2b143d9b49c207b8f93d97e150f40491eda325b7c08579d104047c82eac5d410107d6f"], ["open", "t"], ["created_at", "2021-05-06 02:48:06.044670"], ["updated_at", "2021-05-06 02:48:06.044670"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 678ms (Views: 0.4ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/box" for ::1 at 2021-05-05 21:48:06 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.2ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (391.9ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (23.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 622ms (Views: 442.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/box/new" for ::1 at 2021-05-05 21:48:49 -0500
+Processing by BoxController#new as HTML
+  Rendering box/new.html.erb within layouts/application
+  Rendered box/new.html.erb within layouts/application (1.3ms)
+[Webpacker] Compiling...
+  [1m[36mBox Load (1.0ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes"[0m
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 2b572c6d6f87f88e3598
+Version: webpack 4.46.0
+Time: 17035ms
+Built at: 05/05/2021 21:49:12
+                                                                       Asset       Size            Chunks                         Chunk Names
+                                      js/application-11ef9ffd63c1e31f66f5.js   4.15 MiB       application  [emitted] [immutable]  application
+                                  js/application-11ef9ffd63c1e31f66f5.js.map   4.41 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js   1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map   1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-05a45ab743d065b4572f.js   3.27 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-05a45ab743d065b4572f.js.map   3.47 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json   2.29 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png   7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png   7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png    5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png   7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png   5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png   6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png   1.47 KiB                    [emitted]              
+         media/components/images/delete-262191f0f8800890a2a3c5e89013f098.png  231 bytes                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico   6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png   4.01 KiB                    [emitted]              
+Entrypoint application = js/application-11ef9ffd63c1e31f66f5.js js/application-11ef9ffd63c1e31f66f5.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-05a45ab743d065b4572f.js js/server_rendering-05a45ab743d065b4572f.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1.15 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 432 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (43.3ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 23238ms (Views: 23235.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ajax_post" for ::1 at 2021-05-05 21:49:59 -0500
+Processing by BoxController#ajax_post as HTML
+  Parameters: {"size"=>"large", "label"=>"large box close", "open"=>false, "box"=>{"size"=>"large", "label"=>"large box close", "open"=>false}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "boxes" ("size", "label", "open", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["size", "large"], ["label", "0102020078c621c65ea3002ffcd78174783acc07f0c0742ca9b5012b8f3b940092b9f94f7d0125226f3936a31d7f85b01895732eb6320000006d306b06092a864886f70d010706a05e305c020100305706092a864886f70d010701301e060960864801650304012e3011040ce2c41bc05aee7c5b84ffdb8c020110802a4405daecc924faa60055778a1a1412b731f5aab1c72027a43a7e26a30265b6f8a758d2172c7097a4bc8b"], ["open", "f"], ["created_at", "2021-05-06 02:50:00.100133"], ["updated_at", "2021-05-06 02:50:00.100133"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 696ms (Views: 1.2ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/box" for ::1 at 2021-05-05 21:50:00 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.3ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (483.6ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: bb37a1c16f59dd3a5a09
+Version: webpack 4.46.0
+Time: 14236ms
+Built at: 05/05/2021 21:50:21
+                                                                       Asset       Size            Chunks                         Chunk Names
+                                      js/application-48a267c1fbc1b96439b9.js   4.15 MiB       application  [emitted] [immutable]  application
+                                  js/application-48a267c1fbc1b96439b9.js.map   4.41 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js   1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map   1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-b1600b9949caf2dea4b7.js   3.27 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-b1600b9949caf2dea4b7.js.map   3.47 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json   2.29 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png   7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png   7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png    5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png   7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png   5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png   6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png   1.47 KiB                    [emitted]              
+         media/components/images/delete-262191f0f8800890a2a3c5e89013f098.png  231 bytes                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico   6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png   4.01 KiB                    [emitted]              
+Entrypoint application = js/application-48a267c1fbc1b96439b9.js js/application-48a267c1fbc1b96439b9.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-b1600b9949caf2dea4b7.js js/server_rendering-b1600b9949caf2dea4b7.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1.15 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 432 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (23.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 21262ms (Views: 21058.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/box/new" for ::1 at 2021-05-05 21:50:27 -0500
+Processing by BoxController#new as HTML
+  Rendering box/new.html.erb within layouts/application
+  Rendered box/new.html.erb within layouts/application (0.8ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (30.4ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 54ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ajax_post" for ::1 at 2021-05-05 21:50:36 -0500
+Processing by BoxController#ajax_post as HTML
+  Parameters: {"size"=>"large", "label"=>"Large box open", "open"=>true, "box"=>{"size"=>"large", "label"=>"Large box open", "open"=>true}}
+  [1m[35m (1.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[32mINSERT INTO "boxes" ("size", "label", "open", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["size", "large"], ["label", "0102020078c621c65ea3002ffcd78174783acc07f0c0742ca9b5012b8f3b940092b9f94f7d01d701ba516261e82f596f92d97d33a5be0000006c306a06092a864886f70d010706a05d305b020100305606092a864886f70d010701301e060960864801650304012e3011040ca9e7eed766eb0f2cb2a5360402011080290bcc12819ed4a9a7849eeccdbf44a0835bda166e7e3d2bff7e0a10bcaaddfb15a43d3b8c93c116c4c6"], ["open", "t"], ["created_at", "2021-05-06 02:50:37.106059"], ["updated_at", "2021-05-06 02:50:37.106059"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 732ms (Views: 0.5ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/box" for ::1 at 2021-05-05 21:50:37 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.4ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (598.7ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (23.2ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 827ms (Views: 638.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/box" for ::1 at 2021-05-05 21:51:23 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (1.4ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.4ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (553.0ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: 90772d46b10fec88fb8d
+Version: webpack 4.46.0
+Time: 12819ms
+Built at: 05/05/2021 21:51:43
+                                                                       Asset       Size            Chunks                         Chunk Names
+                                      js/application-dcbd1ce717679cb9eeca.js   4.15 MiB       application  [emitted] [immutable]  application
+                                  js/application-dcbd1ce717679cb9eeca.js.map   4.41 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js   1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map   1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-4beb732cc3469afbf591.js   3.27 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-4beb732cc3469afbf591.js.map   3.47 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json   2.29 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png   7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png   7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png    5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png   7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png   5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png   6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png   1.47 KiB                    [emitted]              
+         media/components/images/delete-262191f0f8800890a2a3c5e89013f098.png  231 bytes                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico   6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png   4.01 KiB                    [emitted]              
+Entrypoint application = js/application-dcbd1ce717679cb9eeca.js js/application-dcbd1ce717679cb9eeca.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-4beb732cc3469afbf591.js js/server_rendering-4beb732cc3469afbf591.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1.15 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 432 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (37.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 20104ms (Views: 19575.8ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-05 21:51:45 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (42.4ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (104.3ms)
+Started POST "/attach_box_owner" for ::1 at 2021-05-05 21:52:05 -0500
+Processing by BoxController#attach_box_owner as HTML
+  Parameters: {"box_owner"=>"3", "id"=>11, "box"=>{"id"=>11}}
+  [1m[36mBox Load (23.9ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" WHERE "boxes"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[33mUPDATE "boxes" SET "box_owners_id" = ?, "label" = ?, "updated_at" = ? WHERE "boxes"."id" = ?[0m  [["box_owners_id", 3], ["label", "0102020078c621c65ea3002ffcd78174783acc07f0c0742ca9b5012b8f3b940092b9f94f7d014ab0d426af15133f4fdc9f66b7b0e1160000006d306b06092a864886f70d010706a05e305c020100305706092a864886f70d010701301e060960864801650304012e3011040cde55ad1495926d740fea8c9f020110802ad75e15ceced8610e3df60fe3d6f90be71f6bc0f513b2e4859715089bba55f64a11a97ac4f40d4cc966c8"], ["updated_at", "2021-05-06 02:52:06.105999"], ["id", 11]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 1125ms (Views: 0.3ms | ActiveRecord: 32.0ms)
+
+
+Started GET "/box" for ::1 at 2021-05-05 21:52:06 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.2ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.2ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (546.8ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (25.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 766ms (Views: 588.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/attach_box_owner" for ::1 at 2021-05-05 21:52:19 -0500
+Processing by BoxController#attach_box_owner as HTML
+  Parameters: {"box_owner"=>"1", "id"=>7, "box"=>{"id"=>7}}
+  [1m[36mBox Load (0.2ms)[0m  [1m[34mSELECT  "boxes".* FROM "boxes" WHERE "boxes"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "boxes" SET "box_owners_id" = ?, "label" = ?, "updated_at" = ? WHERE "boxes"."id" = ?[0m  [["box_owners_id", 1], ["label", "0102020078c621c65ea3002ffcd78174783acc07f0c0742ca9b5012b8f3b940092b9f94f7d0176066140556cdb2d2584595c83bb119f0000006c306a06092a864886f70d010706a05d305b020100305606092a864886f70d010701301e060960864801650304012e3011040ca955b3c132b1efd212fe3fb9020110802906c157b8aa27c53e874ac3219f2daef0f52306a1b2c3cdbf10fb81c571b31cd2c9157a04594f3ef6a6"], ["updated_at", "2021-05-06 02:52:20.224224"], ["id", 7]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 1106ms (Views: 0.3ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/box" for ::1 at 2021-05-05 21:52:20 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.3ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.3ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (823.4ms)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (24.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 1072ms (Views: 860.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/box" for ::1 at 2021-05-05 21:52:58 -0500
+Processing by BoxController#index as HTML
+  [1m[36mBoxOwner Load (0.8ms)[0m  [1m[34mSELECT "box_owners".* FROM "box_owners" ORDER BY "box_owners"."id" DESC[0m
+  Rendering box/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "boxes"[0m
+  [1m[36mBox Load (0.2ms)[0m  [1m[34mSELECT "boxes".* FROM "boxes" ORDER BY "boxes"."id" DESC[0m
+  Rendered box/index.html.erb within layouts/application (581.7ms)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/cesar/Documentos/test/boxCloudforecast/public/packs
+[Webpacker] warning package.json: No license field
+
+[Webpacker] Hash: c244f3e4beeb6b69ce0e
+Version: webpack 4.46.0
+Time: 15010ms
+Built at: 05/05/2021 21:53:20
+                                                                       Asset       Size            Chunks                         Chunk Names
+                                      js/application-bc16d8b233723028828c.js   4.15 MiB       application  [emitted] [immutable]  application
+                                  js/application-bc16d8b233723028828c.js.map   4.41 MiB       application  [emitted] [dev]        application
+                                      js/hello_react-ded9cecb1b116d8ede0a.js   1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+                                  js/hello_react-ded9cecb1b116d8ede0a.js.map   1.26 MiB       hello_react  [emitted] [dev]        hello_react
+                                 js/server_rendering-ba499e319e3ba54edd48.js   3.27 MiB  server_rendering  [emitted] [immutable]  server_rendering
+                             js/server_rendering-ba499e319e3ba54edd48.js.map   3.47 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                                               manifest.json   2.29 KiB                    [emitted]              
+      media/components/images/box-large-d0a8bdbaa3acfde64276cf1f84d1496c.png   7.19 KiB                    [emitted]              
+ media/components/images/box-large-open-b8a16e2bb854f7cdb2e0baa2d06dfe7f.png   7.16 KiB                    [emitted]              
+     media/components/images/box-medium-dc13d0214acd7fb8cfe6c7dd4d352c56.png    5.7 KiB                    [emitted]              
+media/components/images/box-medium-open-018be8e00a72237133552e29aae40f14.png   7.01 KiB                    [emitted]              
+      media/components/images/box-small-dcd89e9ceb4877ef62ad7dc643071528.png   5.05 KiB                    [emitted]              
+ media/components/images/box-small-open-cc023fbc1b60287510f0a061bdd73308.png   6.46 KiB                    [emitted]              
+       media/components/images/box_logo-1e66dc5ab1903ef8660038208b726ca5.png   1.47 KiB                    [emitted]              
+         media/components/images/delete-262191f0f8800890a2a3c5e89013f098.png  231 bytes                    [emitted]              
+        media/components/images/favicon-d0bd1e5db0179e153eb2474a2d6a97c6.ico   6.62 KiB                    [emitted]              
+   media/components/images/no-selection-36fce233051b96b1fa64701c77315454.png   4.01 KiB                    [emitted]              
+Entrypoint application = js/application-bc16d8b233723028828c.js js/application-bc16d8b233723028828c.js.map
+Entrypoint hello_react = js/hello_react-ded9cecb1b116d8ede0a.js js/hello_react-ded9cecb1b116d8ede0a.js.map
+Entrypoint server_rendering = js/server_rendering-ba499e319e3ba54edd48.js js/server_rendering-ba499e319e3ba54edd48.js.map
+[0] ./util.inspect (ignored) 15 bytes {application} {server_rendering} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 1.15 KiB {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.2 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 671 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/harmony-module.js] (webpack)/buildin/harmony-module.js 631 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {server_rendering} [built]
+    + 432 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (37.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 22793ms (Views: 22275.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-05-05 21:53:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered collection of /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (19.7ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.6ms)
+  Rendering /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/cesar/.rvm/gems/ruby-2.7.2/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (81.2ms)

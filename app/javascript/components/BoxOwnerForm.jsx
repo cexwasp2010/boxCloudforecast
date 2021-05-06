@@ -48,6 +48,7 @@ function BoxOwnerForm(props) {
     }    
     /*To check if the fields don't have any error to permit call post ajax method*/
     if (!(!first_name || !last_name || fail_email)) {
+      setDisableButton('disable_btn');
       axios.post(`/box_owners`, {first_name: first_name, last_name: last_name, email: email})
       .then(res => {
         if (res.data.success) {
