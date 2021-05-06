@@ -7,3 +7,5 @@ public
 log
 log/*
 node_modules
+
+/config/aws_keys.rb
