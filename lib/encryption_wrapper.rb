@@ -16,10 +16,11 @@ module EncryptionWrapper
 
 	  private
 	    def get_client
-        # client = Aws::KMS::Client.new(region: 'us-west-2')
+        # Is necesary create the file config/aws_keys.rb with values of ENV['access_key_id'],
+        # ENV['secret_access_key'] and ENV['key_id']
         return Aws::KMS::Client.new(
-            access_key_id: "AKIAUB5TTRWAR54B2SRB",
-            secret_access_key: "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",
+            access_key_id: ENV['access_key_id'],
+            secret_access_key: ENV["secret_access_key"],
             region: 'us-east-1'
           )
       end
@@ -29,7 +30,7 @@ module EncryptionWrapper
       # client = Aws::KMS::Client.new(region: 'us-west-2')
       client = get_client
 
-      resp = client.encrypt({key_id: "0ad31902-4157-49c0-abd6-ca6fb7f35e81", plaintext: text})
+      resp = client.encrypt({key_id: ENV["key_id"], plaintext: text})
 
       resp.ciphertext_blob.unpack('H*')[0]
     end
@@ -37,7 +38,6 @@ module EncryptionWrapper
     def decrypt(blob)
       blob_packed = [blob].pack("H*")
       
-      # client = Aws::KMS::Client.new(region: 'us-west-2')
       client = get_client
       
       resp = client.decrypt({
