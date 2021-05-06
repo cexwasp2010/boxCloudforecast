@@ -27,7 +27,6 @@ module EncryptionWrapper
 
       def encrypt(text)
       
-      # client = Aws::KMS::Client.new(region: 'us-west-2')
       client = get_client
 
       resp = client.encrypt({key_id: ENV["key_id"], plaintext: text})
